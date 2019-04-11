@@ -1,0 +1,21 @@
+.row {
+  @include clearfix;
+}
+
+.flex {
+  float: left;
+}
+
+$flexs: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+
+@each $flex-num in $flexs {
+  .flex-#{$flex-num} {
+    float: left;
+    width: (#{100 / 12 * $flex-num * 1%});
+  }
+}
+
+$color-primary: #0097e0;
+$color-red: #d60a24;
+$color-yellow: #f39934;
+$color-green: #67C23A;
