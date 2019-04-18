@@ -44,6 +44,30 @@ $(function () {
     },
     observer:true,
   })
+
+  var celebrationbanner = new Swiper('.celebration-banner', {
+    //如果需要分页器
+    pagination: {
+        el: '.celebration-swiper-pagination',
+        clickable :true,
+        type: 'bullets',
+    },
+    observer:true,
+  })
+  var technologybanner = new Swiper('.technology-banner', {
+    //如果需要分页器
+    pagination: {
+        el: '.technology-swiper-pagination',
+        clickable :true,
+        type: 'bullets',
+    },
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
+    }, //自动播放
+    observer:true,
+  })
   
     // 视频播放显示
   $(".play").click(function(){
@@ -59,4 +83,55 @@ $(function () {
       $(".playVideo video").attr("src","#")
       $(".playVideo video").attr("poster","")
   })
+  // 育才计划banner切换
+  $(".plan .banner-btn-block .banner-btn").click(function(){
+    $(".plan .banner-btn-block .banner-btn").removeClass('active');
+    $(this).addClass('active');
+    var id = $(this).attr('data-id')
+    $(".plan .banner-img img").hide();
+    $(".plan .banner-img img:nth-child("+id+")").fadeIn();
+  })
+  //导航切换
+  $('.nav>.nav-list a').click(function(){
+    $('.nav .nav-list').removeClass('active');
+    $(this).parent().addClass('active');
+  })
+   //锚点跳转滑动效果            
+   $('a[href*=#],area[href*=#]').click(function() {       
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var $target = $(this.hash);
+        $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+        if ($target.length) { 
+            var targetOffset = $target.offset().top;
+            $('html,body').animate({ 
+                scrollTop: targetOffset
+            },500);
+            return false;
+        }
+    }
+  });
+  // 页面滚动
+  $(window).scroll(function(event){
+    checkscroll()
+  });
+  function checkscroll(){
+    var winPos = $(window).scrollTop(); //屏幕位置
+    var winHeight = $(window).height(); //屏幕高度
+    var Nodeheight = [$('#top').height(),$('#educate').height(),$('#celebration').height(),$('#plan').height(),$('#development').height(),$('#partner').height()],
+        length = Nodeheight.length;
+   //console.log(Nodeheight)
+    if(winPos<=Nodeheight[0]){
+      $('.nav .nav-list').removeClass('active');
+      $('.nav .nav-list:nth-child(1)').addClass('active');
+    }else{
+      for(var i = 1;i<length; i++){
+        console.log(Nodeheight[i])
+        if(winPos<=Nodeheight[i]&&winPos>Nodeheight[i+1]){
+          $('.nav .nav-list').removeClass('active');
+          $('.nav .nav-list:nth-child('+(i+1)+')').addClass('active');
+          break;
+        }
+      }
+    }
+  }
 });
