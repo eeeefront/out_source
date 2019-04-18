@@ -117,16 +117,15 @@ $(function () {
   function checkscroll(){
     var winPos = $(window).scrollTop(); //屏幕位置
     var winHeight = $(window).height(); //屏幕高度
-    var Nodeheight = [$('#top').height(),$('#educate').height(),$('#celebration').height(),$('#plan').height(),$('#development').height(),$('#partner').height()],
+    var Nodeheight = [$('#top'),$('#educate'),$('#celebration'),$('#plan'),$('#development'),$('#partner')],
         length = Nodeheight.length;
    //console.log(Nodeheight)
-    if(winPos<=Nodeheight[0]){
+    if(winPos<=Nodeheight[1].offset().top){
       $('.nav .nav-list').removeClass('active');
       $('.nav .nav-list:nth-child(1)').addClass('active');
     }else{
       for(var i = 1;i<length; i++){
-        console.log(Nodeheight[i])
-        if(winPos<=Nodeheight[i]&&winPos>Nodeheight[i+1]){
+        if(winPos<=Nodeheight[i+1].offset().top&&winPos>Nodeheight[i].offset().top){
           $('.nav .nav-list').removeClass('active');
           $('.nav .nav-list:nth-child('+(i+1)+')').addClass('active');
           break;
