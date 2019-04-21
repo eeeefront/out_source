@@ -12,6 +12,7 @@ var gulp = require('gulp'),
   cleanCSS = require('gulp-clean-css'),
   del = require('del'),
   path = require('path'),
+  runSequence = require('gulp-run-sequence'),
   fileinclude = require('gulp-file-include');
 
 
@@ -92,6 +93,19 @@ gulp.task('testImagemin', function () {
     }));
 });
 
+//压缩  img文件
+gulp.task('media', function () {
+  gulp.src('src/media/**/*')
+    .pipe(changed('dev/media/**/*', {
+      hasChanged: changed.compareSha1Digest
+    }))
+    .pipe(plumber())
+    .pipe(gulp.dest('dev/media'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
 gulp.task("clean", function () {
   return gulp.src('dev')
     .pipe(clean());
@@ -102,6 +116,7 @@ gulp.task('watch', function () {
   var watchJs = gulp.watch('src/js/**/*.js', ['uglifyJs']);
   var watchCss = gulp.watch('src/styles/*.scss', ['sass']);
   var watchImg = gulp.watch('src/images/**/*', ['testImagemin']);
+  var watchMedia = gulp.watch('src/media/**/*', ['media']);
   var watchHtml = gulp.watch('src/**/*.html', ['htmlMin']);
 
   watchJs.on('change', function (event) {
@@ -123,6 +138,12 @@ gulp.task('watch', function () {
     }
   });
 
+  watchMedia.on('change', function (event) {
+    if (event.type === 'deleted') {
+      del('dev/media/**/' + path.basename(event.path));
+    }
+  });
+
   watchHtml.on('change', function (event) {
     if (event.type === 'deleted') {
       del('dev/' + path.basename(event.path));
@@ -140,6 +161,14 @@ gulp.task('watch', function () {
   });
 });
 
-gulp.task('default', ['clean'], function () {
-  gulp.start('uglifyJs', 'sass', 'htmlMin', 'testImagemin', 'watch');
+gulp.task('redist', function(){
+  //先运行clean，然后并行运行html,js,less,images,watch
+  //如果不使用gulp-run-sequence插件的话，由于gulp是并行执行的
+  //有可能会出现一种情况（其他文件处理速度快的已经处理完了，然后clean最后才执行，会把前面处理完的文件删掉，所以要用到runSequence）
+  runSequence('clean', ['uglifyJs', 'sass', 'htmlMin', 'testImagemin', 'media', 'watch'])
 });
+
+gulp.task('default', ['redist']);
+// gulp.task('default', ['clean'], function () {
+//   gulp.start('uglifyJs', 'sass', 'htmlMin', 'testImagemin', 'watch');
+// });
