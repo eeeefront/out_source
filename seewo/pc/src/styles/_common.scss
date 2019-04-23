@@ -8,7 +8,7 @@ body{
         height: 37px;
         background: #191818;
         .header-logo{
-            max-width: 668px;
+            max-width: 1024px;
             margin: 0 auto;
             img{
                 width: 100px;
@@ -17,6 +17,123 @@ body{
                 background: #0097e0;
             }
         }
+    }
+    .popup{
+        z-index: 4;
+        position: fixed;
+        width:40%;
+        min-width: 530px;
+        top:30vh;
+        left: 30%;
+        display: none;
+        .title{
+            background: #262525;
+            color: #D6D2D2;
+            position: relative;
+            font-size: 18px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            span{
+                position: absolute;
+                right: 4%;
+                width: 23px;
+                height: 22px;
+                top: 9px;
+                border-radius: 100%;
+                color: #C49B63;
+                border:1px solid #C49B63;
+                line-height: 1;
+            }
+            span:hover{
+                color:#fff;
+                background: #C49B63;
+                cursor: pointer;
+            }
+        }
+        .content{
+            background: #fff;
+            text-align: center;
+            color:#262525;
+            font-size: 12px;
+            height: 200px;
+        }
+    }
+    .popup-book-going {
+        .content{
+            padding-top:4%;
+            >div{
+                height: 40px;
+                line-height: 40px;
+                width: 60%;
+                margin: 0 auto;
+                *{
+                    float:left;
+                }
+                label{
+                    width:30%;
+                    display: inline-block;
+                    text-align: right;
+                    color:#262525;
+                    font-size:16px;
+                }
+                input{
+                    height: 30px;
+                    line-height: 30px;
+                    margin-top: 5px;
+                }
+            }
+            .phone{
+                input{
+                    width:65%;
+                }
+            }
+            .code{
+                input{
+                    width:36%;
+                }
+                button{
+                    margin: 5px 0 0 1%;
+                    width:28%;
+                    height: 30px;
+                    line-height: 30px;
+                    color:#fff;
+                    background: #C49B63;
+                    border: none;
+                    cursor: pointer;
+                }
+                button.active{
+                    background: #D6D2D2;
+                }
+            }
+            .popup-sub{
+                background: #262525;
+                color:#fff;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 10%;
+                border-radius: 4px;
+                border: none;
+            }
+        }
+    }
+    .popup-book-success {
+        .content .content-text{
+            font-size: 18px;
+            font-weight: bold;
+            margin:0 0 4%;
+            padding-top: 10%;
+        }
+    }
+    .mode{
+        width: 100vw;
+        height: 100vh;
+        position:fixed;
+        top:0;
+        left: 0;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.4);
+        display: none;
     }
     .playVideo{
         position: fixed;

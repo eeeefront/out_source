@@ -119,13 +119,12 @@ $(function () {
     var winHeight = $(window).height(); //屏幕高度
     var Nodeheight = [$('#top'),$('#educate'),$('#celebration'),$('#plan'),$('#development'),$('#partner')],
         length = Nodeheight.length;
-   //console.log(Nodeheight)
-    if(winPos<=Nodeheight[1].offset().top){
+    if(winPos<Nodeheight[1].offset().top){
       $('.nav .nav-list').removeClass('active');
       $('.nav .nav-list:nth-child(1)').addClass('active');
     }else{
       for(var i = 1;i<length; i++){
-        if(winPos<=Nodeheight[i+1].offset().top&&winPos>Nodeheight[i].offset().top){
+        if(winPos<Nodeheight[i+1].offset().top-50&&winPos>=Nodeheight[i].offset().top-50){
           $('.nav .nav-list').removeClass('active');
           $('.nav .nav-list:nth-child('+(i+1)+')').addClass('active');
           break;
@@ -133,4 +132,15 @@ $(function () {
       }
     }
   }
+
+  
+  // 预约弹窗 
+  $('.popup .title .close').click(function(){
+    $('.mode').fadeOut(300);
+    $('.popup').fadeOut(300);
+  })
+  $('.technology-btn .book').click(function(){
+      $('.mode').show();
+      $('.popup').show();
+  })
 });
