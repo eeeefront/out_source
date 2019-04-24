@@ -67,13 +67,21 @@
         .swiper-slide{
             width: 22%;
             height: 304px;
+            overflow: hidden;
             img{
                 width: 100%;
-                cursor: pointer;
+            }
+            img:nth-child(1){
+                visibility: hidden;
+                position: absolute;
             }
         }
         .swiper-slide-active{
             width: 34% !important;
+            img:nth-child(1){
+                visibility: visible;
+                position: relative;
+            }
         }
     }
 }

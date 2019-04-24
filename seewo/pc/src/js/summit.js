@@ -10,13 +10,9 @@ $(function(){
     })
     
     var guestSwiper = new Swiper ('.guest-banner', {
-        // 如果需要分页器
-        // pagination: {
-        //     el: '.swiper-pagination',
-        //     clickable :true,
-        // },
         autoplay:true,
         loop:true,
+        loopedSlides:4,
         observer:true,
         slidesPerView : 'auto',
         lazy: {
@@ -24,10 +20,11 @@ $(function(){
         },
         slideToClickedSlide: true,
     })   
+
     guestSwiper.on('slideChangeTransitionStart',change)
     function change(){
-        $(".guest-banner .swiper-slide img").attr('src','./images/banner-d.png');
-        $(".guest-banner .swiper-slide-active img").attr('src','./images/banner-l.png');
+        // $(".guest-banner .swiper-slide img").attr('src','./images/banner-d.png');
+        // $(".guest-banner .swiper-slide-active img").attr('src','./images/banner-l.png');
     }
     // 预约弹窗关闭
     $('.popup .title .close').click(function(){
@@ -35,14 +32,12 @@ $(function(){
         $('.mode').fadeOut(300);
         $('.popup').fadeOut(300);
         setTimeout(function(){
-            $('#getcode').removeClass('active')
-            $('#getcode').html('获取验证码');
+            $('#getcode').removeClass('active').html('获取验证码');
         },300)
     })
     // 验证码获取
     $('#getcode').click(function(){
-        $(this).addClass('active');
-        $(this).html('正在发送...')
+        $(this).addClass('active').html('正在发送...');
         daoshu(60,$(this))
     })
     //预约确定
