@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@include('head.html', {"title": "detail"})
+
+<body>
+  <div class="main-wrapper">
+    @include('header.html', {"title": "detail"})
+    <div class="content">
+      <div class="first-wrapper">
+        <div class="big-txt">科技赋能教育</div>
+        <div class="mid-txt">教育科技行业峰会</div>
+        <div class="place">北京香格里拉大酒店</div>
+        <div class="date">2019.6.12 </div>
+        <a href="javascript:;" class="live-btn" id="live-btn">直播预约</a>
+      </div>
+      <div class="guest-introduce-wrapper">
+        <div class="detail-title">嘉宾介绍</div>
+        <div class="swiper-box">
+          <div class="swiper-container" id="guest-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/guest.png">
+                <div class="info-box">
+                  <div class="name">你是谁</div>
+                  <div class="desc">我是一个很牛逼很牛逼的人，不知道为什么，我就是这么认为的。</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/guest.png">
+                <div class="info-box">
+                  <div class="name">你是谁</div>
+                  <div class="desc">我是一个很牛逼很牛逼的人，不知道为什么，我就是这么认为的。</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/guest.png">
+                <div class="info-box">
+                  <div class="name">你是谁</div>
+                  <div class="desc">我是一个很牛逼很牛逼的人，不知道为什么，我就是这么认为的。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="date-part" id="tabs">
+          <div class="date-card">
+            <div class="date-mi">6.12</div>
+            <div class="am tab-min active" data-moment="am">上午</div>
+            <div class="pm tab-min" data-moment="pm">下午</div>
+          </div>
+          <div class="date-details row">
+            <div class="flex left-box" id="part-left">
+              <div class="am kk">
+                <p>09:00</p>
+                <p class="gun">-</p>
+                <p>12:00</p>
+              </div>
+              <div class="pm kk" style="display: none;">
+                <p>14:30</p>
+                <p class="gun">-</p>
+                <p>18:00</p>
+              </div>
+            </div>
+            <div class="flex right-box" id="part-right">
+              <!-- 上午 -->
+              <div class="part am">
+                <div class="detail-item">
+                  <h3>开场仪式/视频</h3>
+                </div>
+                <div class="detail-item">
+                  <h3>嘉宾致辞</h3>
+                  <p>政府体系最高级别领导 王富<br>中国教育装备行业协会会长大</p>
+                </div>
+                <div class="detail-item">
+                  <h3>集团高层致辞</h3>
+                  <p>王毅然  视源股份董事长</p>
+                  <p>刘丹凤  视源股份董事</p>
+                </div>
+                <div class="detail-item">
+                  <h3>十周年主题演讲：过去及未来</h3>
+                  <p>黄明寒  希沃总裁</p>
+                </div>
+                <div class="detail-item">
+                  <h3>谈产品及技术的理念、布局</h3>
+                  <p>崔剑+邓毅刚  希沃</p>
+                </div>
+                <div class="detail-item">
+                  <h3>教师发展+教师信息化应用数据报告</h3>
+                  <p>胡婷玉  希沃</p>
+                </div>
+                <div class="detail-item">
+                  <h3>【育才计划行动仪式】</h3>
+                  <p>待定</p>
+                </div>
+              </div>
+              <!-- 下午 -->
+              <div class="part pm" style="display: none;">
+                <div class="detail-item">
+                  <h3>企业组织文化/社会责任</h3>
+                  <p>孙永辉  视源股份创始人</p>
+                </div>
+                <div class="detail-item">
+                  <h3>新时代教育发展趋势“育人”新思维</h3>
+                  <p>蒲公英</p>
+                </div>
+                <div class="detail-item">
+                  <h3>全球背景下，谈技术在教育的应用</h3>
+                  <p>英特尔</p>
+                </div>
+                <div class="detail-item">
+                  <h3>【圆桌论坛】支持人：李斌</h3>
+                  <p>教育信息化圈子相关方</p>
+                </div>
+                <div class="detail-item">
+                  <h3>群访环节</h3>
+                  <p>各个领域相关方</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-title">庆典盛况</div>
+        <div class="banner-wrapper third-banner">
+          <div class="swiper-container gallery-top" id="img-gallery-top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(./images/jacky.jpg)">
+                <div class="slide-content">
+                  <div class="name">马云</div>
+                  <div class="the-txt">除了帮助改善偏远乡村学校的教学环境外，还希望。</div>
+                  <div class="desc">
+                    （25字x4行，文案80字左右）天将降大任于斯人也
+                    必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，增益其所不能百里奚举于市
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image:url(./images/jacky.jpg)">
+                <div class="slide-content">
+                  <div class="name">马云</div>
+                  <div class="the-txt">除了帮助改善偏远乡村学校的教学环境外，还希望。</div>
+                  <div class="desc">
+                    （25字x4行，文案80字左右）天将降大任于斯人也
+                    必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，增益其所不能百里奚举于市
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image:url(./images/jacky.jpg)">
+                <div class="slide-content">
+                  <div class="name">马云</div>
+                  <div class="the-txt">除了帮助改善偏远乡村学校的教学环境外，还希望。</div>
+                  <div class="desc">
+                    （25字x4行，文案80字左右）天将降大任于斯人也
+                    必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，增益其所不能百里奚举于市
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image:url(./images/jacky.jpg)">
+                <div class="slide-content">
+                  <div class="name">马云</div>
+                  <div class="the-txt">除了帮助改善偏远乡村学校的教学环境外，还希望。</div>
+                  <div class="desc">
+                    （25字x4行，文案80字左右）天将降大任于斯人也
+                    必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，增益其所不能百里奚举于市
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-container gallery-thumbs" id="img-gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(./images/jacky.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./images/jacky.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./images/jacky.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(./images/jacky.jpg)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrapper">
+        <div class="title-box">
+          <div class="detail-title">会场地址</div>
+        </div>
+        <div class="map-box">
+          <img src="./images/map.png">
+        </div>
+      </div>
+      <div class="guest-introduce-wrapper">
+        <div class="detail-title">合作媒体<span>（排名不分先后）</span></div>
+        <div class="media-logo-wrapper">
+          <div class="logo-item"><img src="./images/media-1.png"></div>
+          <div class="logo-item"><img src="./images/media-2.png"></div>
+          <div class="logo-item"><img src="./images/media-1.png"></div>
+          <div class="logo-item"><img src="./images/media-2.png"></div>
+          <div class="logo-item"><img src="./images/media-1.png"></div>
+          <div class="logo-item"><img src="./images/media-2.png"></div>
+          <div class="logo-item"><img src="./images/media-1.png"></div>
+          <div class="logo-item"><img src="./images/media-2.png"></div>
+          <div class="logo-item"><img src="./images/media-1.png"></div>
+          <div class="logo-item"><img src="./images/media-2.png"></div>
+          <div class="logo-item"><img src="./images/media-1.png"></div>
+          <div class="logo-item"><img src="./images/media-2.png"></div>
+          <div class="logo-item"><img src="./images/media-1.png"></div>
+          <div class="logo-item"><img src="./images/media-2.png"></div>
+          <div class="logo-item"><img src="./images/media-1.png"></div>
+        </div>
+      </div>
+    </div>
+    @include('footer.html',{"title": "detail"})
+    @include('livepop.html')
+    @include('success.html')
+  </div>
+</body>
+
+</html>

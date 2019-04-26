@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import "_common";
+
+.edu-banner {
+  height: 6rem;
+  background-color: #6d6d6d;
+  padding: 1.5rem .4rem;
+  font-size: .96rem;
+  color: #fff;
+  line-height: 1.35rem;
+  position: relative;
+
+  a {
+    color: #D69D4E;
+    font-size: .32rem;
+    position: absolute;
+    bottom: .75rem;
+    left: .4rem;
+    line-height: .45rem;
+  }
+}
+
+.vote-wrapper {
+  padding: .56rem .32rem .1rem;
+
+  .vote-item {
+    border: .02rem solid #d8d8d8;
+    border-radius: .12rem;
+    background: url('../images/net-bg2.png') no-repeat top right;
+    background-size: 2.7rem auto;
+    overflow: hidden;
+    margin-bottom: .24rem;
+
+    .info-link {
+      display: block;
+      padding: .4rem .3rem;
+
+      .name {
+        font-size: .4rem;
+        color: #333;
+        margin-bottom: .2rem;
+        font-family: PingFangSC-Medium;
+
+        span {
+          font-size: .24rem;
+          color: #666;
+          font-family: PingFangSC-Regular;
+          margin-left: .2rem;
+        }
+      }
+
+      .photograph {
+        height: 5.26rem;
+        line-height: 0;
+        overflow: hidden;
+        margin-bottom: .2rem;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .title-line {
+        font-size: .32rem;
+        color: #666;
+        font-family: PingFangSC-Medium;
+        margin-bottom: .2rem;
+      }
+
+      .desc {
+        font-size: .24rem;
+        color: #666;
+        font-family: PingFangSC-Regular;
+        text-align: justify;
+      }
+    }
+
+    .vote-box {
+      height: 1.08rem;
+      background-color: #333333;
+      box-shadow: 0 .04rem .08rem 0 #D8D8D8;
+      border-radius: 0 0 .12rem .12rem;
+      padding: .26rem .3rem;
+
+      .vote-btn {
+        width: 1.8rem;
+        height: .56rem;
+        display: block;
+        border: .02rem solid #CB9718;
+        border-radius: .28rem;
+        font-size: .28rem;
+        color: #CB9718;
+        text-align: center;
+        line-height: .52rem;
+      }
+    }
+  }
+}
+
+.more-line {
+  text-align: center;
+  padding-bottom: .8rem;
+
+  a {
+    font-size: .28rem;
+    color: #191818;
+  }
+}

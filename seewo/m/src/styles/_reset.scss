@@ -105,11 +105,11 @@ table {
 }
 
 :root {
-	font-size: 13.3333vw;
-	/* calc(100vw / 7.5) */
+	font-size: 12.078vw;
+	/* calc(100vw / 8.28) */
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 828px) {
 	:root {
 		font-size: 100px;
 	}
@@ -117,5 +117,6 @@ table {
 
 body {
 	color: #333;
-	font-size: 0.26rem;
+  font-size: 0.26rem;
+  font-family: PingFangSC-Regular;
 }

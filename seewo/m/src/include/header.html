@@ -1,6 +1,16 @@
 <div class="header">
   <div class="header-content">
     <a href="#" class="logo"><img src="../images/logo.png"></a>
-    <div class="menu-btn"><img src="../images/menu.png"></div>
+    @if (context.title === 'index' ) { <div class="menu-btn" id="menu"><img class="menu" src="../images/menu.png"><img class="close" src="../images/close.png" style="display: none;"></div> }
+    @if (context.title !== 'index' ) { <a href="/" class="menu-btn"><img src="../images/home.png"></a> }
+  </div>
+
+  <div class="point-wrapper" id="point-wrapper">
+    <div class="point-item">首页</div>
+    <div class="point-item">让教育更美好</div>
+    <div class="point-item">庆典盛况</div>
+    <div class="point-item">育才计划</div>
+    <div class="point-item">希沃发展</div>
+    <div class="point-item">合作媒体</div>
   </div>
 </div>
