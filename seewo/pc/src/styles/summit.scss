@@ -66,10 +66,11 @@
         margin:0 auto;
         .swiper-slide{
             width: 22%;
-            height: 304px;
+            height: 300px;
             overflow: hidden;
             img{
                 width: 100%;
+                display: block;
             }
             img:nth-child(1){
                 visibility: hidden;

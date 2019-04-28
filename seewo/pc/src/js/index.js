@@ -11,21 +11,17 @@ $(function () {
       stopOnLastSlide: false,
       disableOnInteraction: true,
     }, //自动播放
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     loop: true,
     observer: true
   })
 
-  var videobanner = new Swiper('.educate-banner', {
+  var educatebanner = new Swiper('.educate-banner', {
     //如果需要分页器
-    pagination: {
-      el: '.educate-swiper-pagination',
-      clickable: true,
-      type: 'bullets',
-    },
+    // pagination: {
+    //   el: '.educate-swiper-pagination',
+    //   clickable: true,
+    //   type: 'bullets',
+    // },
     autoplay: {
       delay: 5000,
       stopOnLastSlide: false,
@@ -89,8 +85,8 @@ $(function () {
     $(".plan .banner-btn-block .banner-btn").removeClass('active');
     $(this).addClass('active');
     var id = $(this).attr('data-id')
-    $(".plan .banner-img img").hide();
-    $(".plan .banner-img img:nth-child(" + id + ")").fadeIn();
+    $(".plan .banner-img a").hide();
+    $(".plan .banner-img a:nth-child(" + id + ")").fadeIn();
   })
   //
   //锚点跳转滑动效果            
