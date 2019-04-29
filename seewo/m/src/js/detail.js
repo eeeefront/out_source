@@ -35,5 +35,15 @@ $(function(){
     $('#live-pop').fadeIn();
   }).on('click', '.live-container .pop-close', function(){
     $(this).parents('.live-container').fadeOut();
+  }).on('click', '#map', function(){
+    $('#mapBg').show().find('.map-tab').animate({
+      bottom: 0
+    }, 300);
+  }).on('click', '#mapBg .close', function(){
+    $('#mapBg').find('.map-tab').animate({
+      bottom: '-100%'
+    }, 300, function() {
+      $('#mapBg').hide();
+    });
   });
 });

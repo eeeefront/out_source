@@ -129,5 +129,12 @@ $(function () {
       $(this).find('.play-btn').show();
     }
     return false;
+  }).on('click', '#live-btn', function(){
+    $('#live-pop').fadeIn();
+  }).on('click', '.live-container .pop-close', function(){
+    $(this).parents('.live-container').fadeOut();
+  });
+  $('#play-video video').bind('ended',function() {
+    $('#play-video').find('.play-btn').show();
   });
 });

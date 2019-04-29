@@ -1,0 +1,25 @@
+<div class="video-pop" id="diy-video">
+  <div class="video-box">
+    <video src=""></video>
+    <div class="close" id="diy-close">
+      <img src="./images/pop-close.png">
+    </div>
+  </div>
+</div>
+<script>
+  $(function(){
+    $('[role="video-link"]').click(function(){
+      var url = $(this).data('url');
+      var $video = $('#diy-video');
+      $video.find('video').attr('src', url);
+      $video.fadeIn(function() {
+        $video.find('video').trigger('play');
+      });
+    });
+
+    $('#diy-close').click(function(){
+      $('#diy-video').find('video').trigger('pause');
+      $('#diy-video').fadeOut();
+    });
+  });
+</script>

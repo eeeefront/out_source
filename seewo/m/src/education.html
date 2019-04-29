@@ -16,8 +16,11 @@
         </div>
         <div class="article-content">
           <div class="video-wrapper">
-            <div class="play-btn">
-              <img src="./images/play.png">
+            <div class="video-box" id="play-video">
+              <video src="./media/video-1.mp4"></video>
+              <div class="play-btn">
+                <img src="./images/play.png">
+              </div>
             </div>
           </div>
           <p>2016年即将过去，作为国家教育信息化十年发展规划的第六个年头，国家政策的支持、需求的增加促使信息化教育装备市场步入了一个高速发展的时代。目前中国教育信息化已经有了长足发展，城乡信息化教育差距却仍然较大，虽然有社会各界的支持，但农村教育信息化进程仍有待进一步推进。</p>
@@ -45,7 +48,7 @@
         </div>
       </div>
     </div>
-    @include('footer.html')
+    @include('footer.html', {"title": "education"})
   </div>
 </body>
 
