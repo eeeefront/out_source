@@ -16,7 +16,7 @@
             width: 40px;
             height: 4px;
             background: rgba(255,255,255,0.7);
-            border-radius: 0;
+            @include radius(0);
         }
         .swiper-pagination-bullet-active {
             opacity: 1;
@@ -28,6 +28,7 @@
     width:735px;
     margin:0 auto 40px;
     text-align: center;
+    overflow: hidden;
     .text-title{
         color: #CB9718;
         font-size: 36px;
@@ -41,16 +42,40 @@
 }
 // 让教育更美好
 .educate-block{
-    .swiper-slide{
-        img{
-            width: 100%;
+    .text{
+        margin:0 auto;
+    }
+    .educate-banner{
+        .swiper-slide{
+            position: relative;
+            div{
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3);    
+                position: absolute;
+                top: 0;            
+                img{
+                    position: absolute;
+                    width: 6%;
+                    top: 47%;
+                    left: 45%;
+                    cursor: pointer;
+                }
+                img:hover{
+                    @include radius(100%);
+                    box-shadow: 0px 0px 30px rgba(255,255,255,0.7);
+                }
+            }
+            img{
+                width: 100%;    
+            }
         }
     }
     .story-banner{
-        margin: 40px auto;
-        width:1064px; 
+        margin: 0 auto 40px;
+        width:960px; 
         .swiper-slide{
-            padding: 4% 20px 15%;
+            padding: 4% 20px 18%;
             position: relative;
             .swiper-slide-box{
                 width: 20%;
@@ -58,6 +83,7 @@
                 // float: left;
                 img{
                     transition: all .3s ease-in-out;
+                    width: 100%;
                 }
                 .box-content{
                     opacity: 0;
@@ -68,6 +94,11 @@
                     bottom: 0;
                     left: 4%;
                     .box-title{
+                        color:#fff;
+                        font-size:20px;
+                        margin-bottom: 6px;
+                    }
+                    .box-name{
                         font-size: 18px;
                         margin-bottom: 6px;
                     }
@@ -96,38 +127,38 @@
             text-align: center;
             z-index: 10;
             position: absolute;
-            bottom: 22% !important;
+            bottom: 25% !important;
             .swiper-pagination-bullet {
-                width: 8px;
-                height: 8px;
+                width: 12px;
+                height: 12px;
                 background: transparent;
                 border: 1px solid #C49B63;
                 margin: 0 1%;
             }
             .swiper-pagination-bullet-active {
                 opacity: 1;
-                width: 6px;
-                height: 6px;
+                width:10px;
+                height: 10px;
                 background: #C49B63;
                 position: relative;
             }
             .swiper-pagination-bullet-active::after{
                 content: '';
-                width: 10px;
-                height: 10px;
+                width: 14px;
+                height: 14px;
                 border:1px solid #C49B63;
                 position: absolute;
-                border-radius: 100%;
+                @include radius(100%);
                 top:-4px;
                 left: -4px;
             }
             .swiper-pagination-bullet-active::before{
                 content: '';
-                width: 16px;
-                height: 16px;
+                width: 20px;
+                height: 20px;
                 border:1px solid #C49B63;
                 position: absolute;
-                border-radius: 100%;
+                @include radius(100%);
                 top: -7px;
                 left: -7px;
             }
@@ -141,23 +172,23 @@
     padding: 8% 0;
     .technology-position{
         font-size: 12px;
-        width: 1024px;
+        width:960px; 
         margin:0 auto 9px;
     }
     .technology-title{
         font-size: 44px;
-        width: 1024px;
+        width: 960px;
         margin:0 auto 9px;
         font-weight: bold;
         letter-spacing: 2px;
     }
     .technology-description{
         font-size: 18px;
-        width: 1024px;
+        width: 960px;
         margin:0 auto 52.5px;
     }
     .technology-btn{
-        width: 1024px;
+        width: 960px;
         margin:0 auto;
         div{
             font-size: 16px;
@@ -183,7 +214,7 @@
 .celebration{
     .celebration-banner{
         margin: 40px auto;
-        width:1024px;
+        width:960px; 
         .swiper-slide{
             padding-bottom:2%;
             position: relative;
@@ -194,9 +225,10 @@
                 width: 32%;
                 overflow: hidden;
                 display: inline-block;
-                margin: 0 20px 20px 0;
+                margin: 0 2% 2% 0;
                 img{
                     width: 100%;
+                    display:block;
                 }
                 .box-text{
                     color: #fff;
@@ -258,36 +290,36 @@
             position: absolute;
             bottom: 1% !important;
             .swiper-pagination-bullet {
-                width: 8px;
-                height: 8px;
+                width: 12px;
+                height: 12px;
                 background: transparent;
                 border: 1px solid #C49B63;
                 margin: 0 1%;
             }
             .swiper-pagination-bullet-active {
                 opacity: 1;
-                width: 6px;
-                height: 6px;
+                width: 10px;
+                height: 10px;
                 background: #C49B63;
                 position: relative;
             }
             .swiper-pagination-bullet-active::after{
                 content: '';
-                width: 10px;
-                height: 10px;
+                width: 14px;
+                height: 14px;
                 border:1px solid #C49B63;
                 position: absolute;
-                border-radius: 100%;
+                @include radius(100%);
                 top:-4px;
                 left: -4px;
             }
             .swiper-pagination-bullet-active::before{
                 content: '';
-                width: 16px;
-                height: 16px;
+                width: 20px;
+                height: 20px;
                 border:1px solid #C49B63;
                 position: absolute;
-                border-radius: 100%;
+                @include radius(100%);
                 top: -7px;
                 left: -7px;
             }
@@ -298,34 +330,39 @@
 // 育才计划
 .plan{
     background: #262525;
-    padding: 2% 0;
+    padding-bottom:4%;
     .plan-banner{
-        width: 1024px;
+        width:960px; 
         margin: 0 auto;
         div{
             display: inline-block;
         }
         .banner-img{
             width:60%;
-            margin-right:1%; 
-            img{
+            margin-right:0.5%; 
+            a{
                 width: 100%;
+                display:block;
+                img{
+                    width: 100%;
+                    display:block;
+                }
             }
             .hide{
                 display: none
             }
         }
         .banner-btn-block{
-            width: 39%;
+            width: 39.5%;
             text-align: center;
             float: right;
-            height: 450px;
+            height: 426.56px;
             .banner-btn{
-                background: #000;
+                background: #191818;
                 width: 100%;
                 height: 32%;
-                line-height: 11.28vw;
-                min-height:137.16px;
+                line-height: 0;
+                padding-top: 16%;
                 cursor: pointer;
                 color:#D29D55 ;
                 transition: all .2s ease-in-out;
@@ -360,9 +397,10 @@
     }
     .development-block{
         background: #262525;
-        padding:6% 4%;
-        margin:0 10%;
-        min-width: 1024px;
+        padding:6% 4% 2px;
+        margin:0 auto;
+        max-width:960px;
+        position: relative;
         .block-title{
             font-size:22px;
             text-align: center;
@@ -375,10 +413,9 @@
             }
         }
         .block-education{
-            min-width: 960px;
             .block-education-content{
                 margin: 50px auto 0;
-                width: 80%;
+                width: 100%;
                 overflow: hidden;
                 .content-box:last-child{
                     margin-right:0;
@@ -395,24 +432,23 @@
                     .box-title{
                         color:#C49B63;
                         font-size: 18px;
-                        margin:10px 0;
+                        margin:20px 0;
                     }
                     .box-description{
                         text-align: left;
                         color: #D6D2D2;
-                        max-width: 176px;
+                        max-width: 210px;
                         margin: 0 auto;
-                        font-size:12px;
+                        font-size: 14px;
                     }
                 }
             }
         }
         .block-technology{
             margin: 4% auto 6%;
-            min-width: 960px;
             .technology-banner{
                 margin: 40px auto;
-                width:80%;
+                width:100%;
                 .swiper-slide{
                     padding-bottom:4%;
                     text-align: center;    
@@ -428,13 +464,14 @@
                             width: 65%;
                             img{
                                 width:100%;
+                                display: block;
                             }
                         }
                         .banner-text{
                             width: 35%;
                             text-align: center;
                             padding:0 3%;
-                            background: #000;
+                            background: #191818;
                             .text-title{
                                 font-size:16px;
                                 color: #C49B63;
@@ -455,36 +492,36 @@
                     position: absolute;
                     bottom: 1% !important;
                     .swiper-pagination-bullet {
-                        width: 8px;
-                        height: 8px;
+                        width: 12px;
+                        height: 12px;
                         background: transparent;
                         border: 1px solid #C49B63;
                         margin: 0 1%;
                     }
                     .swiper-pagination-bullet-active {
                         opacity: 1;
-                        width: 6px;
-                        height: 6px;
+                        width: 10px;
+                        height: 10px;
                         background: #C49B63;
                         position: relative;
                     }
                     .swiper-pagination-bullet-active::after{
                         content: '';
-                        width: 10px;
-                        height: 10px;
+                        width: 14px;
+                        height: 14px;
                         border:1px solid #C49B63;
                         position: absolute;
-                        border-radius: 100%;
+                        @include radius(100%);
                         top:-4px;
                         left: -4px;
                     }
                     .swiper-pagination-bullet-active::before{
                         content: '';
-                        width: 16px;
-                        height: 16px;
+                        width: 20px;
+                        height: 20px;
                         border:1px solid #C49B63;
                         position: absolute;
-                        border-radius: 100%;
+                        @include radius(100%);
                         top: -7px;
                         left: -7px;
                     }
@@ -492,12 +529,11 @@
             }
         }
         .block-media{
-            min-width: 960px;
             .media-top-banner{
-                margin: 40px auto;
+                margin: 40px auto 20px;
                 width:80%;
                 overflow: hidden;
-                background: #000;
+                background: #191818;
                 a{
                     height: 100%;
                     >div{
@@ -509,11 +545,11 @@
                         width: 53%;
                         img{
                             width:100%;
+                            display: block;
                         }
                     }
                     .banner-text{
                         width: 47%;
-                        text-align: center;
                         padding:0 3%;
                         .text-title{
                             font-size:20px;
@@ -523,24 +559,24 @@
                         .text-description{
                             font-size:12px;
                             color: #D6D2D2;
-                            line-height: 30px;
+                            line-height: 1.5;
                             text-align: left;
                         }
                     }
                 }
             }
             .media-banner{
-                margin: 40px auto;
+                margin: 20px auto 40px;
                 width: 100%;
                 padding: 0 10%;
                 .swiper-slide{
                     padding-bottom:4%;  
                     height: auto;
-                    a:nth-child(2){
-                        margin: 0 5%;
+                    a:nth-child(2){   
+                        margin: 0 3%;
                     }
                     a{
-                        width:30%;
+                        width:31.33%;
                         height: 100%;
                         display: inline-block;
                         overflow: hidden;
@@ -549,15 +585,17 @@
                             overflow: hidden;
                             img{
                                 width:100%;
+                                display: block;
                                 transition: all .3s;
                             }
                         }
                         .banner-text{
                             transition: all .3s;
                             padding:4% 10%;
-                            background: #000;
+                            background: #191818 ;
                             height: 60px;
                             color: #fff;
+                            @include text-hidden(2);
                             .text-title{
                                 transition: all .3s;
                                 font-size:16px;
@@ -589,14 +627,33 @@
                         }
                     }
                 }
+                .swiper-button-prev{
+                    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23C49B63'%2F%3E%3C%2Fsvg%3E")
+                }
+                .swiper-button-next{
+                    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23C49B63'%2F%3E%3C%2Fsvg%3E")
+                }
+                .swiper-button-prev,.swiper-button-next{
+                    width: 30px;
+                    height:30px;
+                    @include radius(100%);
+                    border:2px solid #C49B63;
+                    background-size: 10px 20px;
+                }
             }
+        }
+        >img{
+            position: absolute;
+            bottom:0;
+            right: 0;
         }
     }
 }
 // 合作媒体
 .partner{
     margin: 6% auto 4%;
-    max-width: 1024px;
+    width:80%;
+    width: 960px;
     .partner-title{
         color:#cb9718;
         font-size: 32px;
@@ -618,11 +675,18 @@
         }
     }
 }
+// 底纹
+.shading{
+    background: url('../images/shading.png') no-repeat center;
+    height: 30vh;
+    background-size: 100%;
+    background-position: left bottom;
+}
 // 导航
 .nav{
     position: fixed;
     top:22%;
-    right:13%;
+    right:10%;
     text-align: right;
     z-index: 20;
     font-size:22px;
@@ -637,4 +701,7 @@
             color:#fff;
         }
     }
+}
+a {
+    outline:none; 
 }

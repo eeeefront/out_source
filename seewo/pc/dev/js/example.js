@@ -1,0 +1,1 @@
+$(function(){function o(){$(".mode").fadeOut(300),$(".rules").fadeOut(300)}console.log(123321),$(".mode .close").click(function(){o()}),$(".go-back").click(function(){o()}),$("#getRule").click(function(){$(".mode").show(),$(".rules").show()})});

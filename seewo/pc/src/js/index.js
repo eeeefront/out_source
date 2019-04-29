@@ -11,21 +11,17 @@ $(function () {
       stopOnLastSlide: false,
       disableOnInteraction: true,
     }, //自动播放
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     loop: true,
     observer: true
   })
 
-  var videobanner = new Swiper('.educate-banner', {
+  var educatebanner = new Swiper('.educate-banner', {
     //如果需要分页器
-    pagination: {
-      el: '.educate-swiper-pagination',
-      clickable: true,
-      type: 'bullets',
-    },
+    // pagination: {
+    //   el: '.educate-swiper-pagination',
+    //   clickable: true,
+    //   type: 'bullets',
+    // },
     autoplay: {
       delay: 5000,
       stopOnLastSlide: false,
@@ -89,10 +85,9 @@ $(function () {
     $(".plan .banner-btn-block .banner-btn").removeClass('active');
     $(this).addClass('active');
     var id = $(this).attr('data-id')
-    $(".plan .banner-img img").hide();
-    $(".plan .banner-img img:nth-child(" + id + ")").fadeIn();
+    $(".plan .banner-img a").hide();
+    $(".plan .banner-img a:nth-child(" + id + ")").fadeIn();
   })
-  //
   //锚点跳转滑动效果            
   $('a[href*=#],area[href*=#]').click(function () {
     if ($(this).parent().hasClass('active')) return
@@ -117,6 +112,7 @@ $(function () {
       }
     }
   });
+  checkscroll();
   // 页面滚动
   $(window).on('scroll', checkscroll);
   function checkscroll() {
@@ -154,6 +150,16 @@ $(function () {
     setTimeout(function () {
       $('#getcode').removeClass('active').html('获取验证码');
     }, 300)
+  })
+  //手机号正则验证
+  $("#popup-phone").blur(function(){
+    var phone = $(this).val();
+    console.log(phone);
+    if(!(/^1[3|4|5|6|7|8|9][0-9]\d{4,8}$/.test(phone))){
+      $('.phone .tips').show();
+      return ;
+    }
+    $('.phone .tips').fadeOut();
   })
   // 验证码获取
   $('#getcode').click(function () {
