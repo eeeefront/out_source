@@ -88,7 +88,6 @@ $(function () {
     $(".plan .banner-img a").hide();
     $(".plan .banner-img a:nth-child(" + id + ")").fadeIn();
   })
-  //
   //锚点跳转滑动效果            
   $('a[href*=#],area[href*=#]').click(function () {
     if ($(this).parent().hasClass('active')) return
@@ -113,6 +112,7 @@ $(function () {
       }
     }
   });
+  checkscroll();
   // 页面滚动
   $(window).on('scroll', checkscroll);
   function checkscroll() {
@@ -150,6 +150,16 @@ $(function () {
     setTimeout(function () {
       $('#getcode').removeClass('active').html('获取验证码');
     }, 300)
+  })
+  //手机号正则验证
+  $("#popup-phone").blur(function(){
+    var phone = $(this).val();
+    console.log(phone);
+    if(!(/^1[3|4|5|6|7|8|9][0-9]\d{4,8}$/.test(phone))){
+      $('.phone .tips').show();
+      return ;
+    }
+    $('.phone .tips').fadeOut();
   })
   // 验证码获取
   $('#getcode').click(function () {

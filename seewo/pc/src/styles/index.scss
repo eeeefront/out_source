@@ -16,7 +16,7 @@
             width: 40px;
             height: 4px;
             background: rgba(255,255,255,0.7);
-            border-radius: 0;
+            @include radius(0);
         }
         .swiper-pagination-bullet-active {
             opacity: 1;
@@ -42,6 +42,9 @@
 }
 // 让教育更美好
 .educate-block{
+    .text{
+        margin:0 auto;
+    }
     .educate-banner{
         .swiper-slide{
             position: relative;
@@ -59,7 +62,7 @@
                     cursor: pointer;
                 }
                 img:hover{
-                    border-radius: 100%;
+                    @include radius(100%);
                     box-shadow: 0px 0px 30px rgba(255,255,255,0.7);
                 }
             }
@@ -69,8 +72,8 @@
         }
     }
     .story-banner{
-        margin: 40px auto;
-        width:1064px; 
+        margin: 0 auto 40px;
+        width:960px; 
         .swiper-slide{
             padding: 4% 20px 18%;
             position: relative;
@@ -145,7 +148,7 @@
                 height: 14px;
                 border:1px solid #C49B63;
                 position: absolute;
-                border-radius: 100%;
+                @include radius(100%);
                 top:-4px;
                 left: -4px;
             }
@@ -155,7 +158,7 @@
                 height: 20px;
                 border:1px solid #C49B63;
                 position: absolute;
-                border-radius: 100%;
+                @include radius(100%);
                 top: -7px;
                 left: -7px;
             }
@@ -169,23 +172,23 @@
     padding: 8% 0;
     .technology-position{
         font-size: 12px;
-        width: 1024px;
+        width:960px; 
         margin:0 auto 9px;
     }
     .technology-title{
         font-size: 44px;
-        width: 1024px;
+        width: 960px;
         margin:0 auto 9px;
         font-weight: bold;
         letter-spacing: 2px;
     }
     .technology-description{
         font-size: 18px;
-        width: 1024px;
+        width: 960px;
         margin:0 auto 52.5px;
     }
     .technology-btn{
-        width: 1024px;
+        width: 960px;
         margin:0 auto;
         div{
             font-size: 16px;
@@ -211,7 +214,7 @@
 .celebration{
     .celebration-banner{
         margin: 40px auto;
-        width:1024px;
+        width:960px; 
         .swiper-slide{
             padding-bottom:2%;
             position: relative;
@@ -222,7 +225,7 @@
                 width: 32%;
                 overflow: hidden;
                 display: inline-block;
-                margin: 0 20px 20px 0;
+                margin: 0 2% 2% 0;
                 img{
                     width: 100%;
                     display:block;
@@ -306,7 +309,7 @@
                 height: 14px;
                 border:1px solid #C49B63;
                 position: absolute;
-                border-radius: 100%;
+                @include radius(100%);
                 top:-4px;
                 left: -4px;
             }
@@ -316,7 +319,7 @@
                 height: 20px;
                 border:1px solid #C49B63;
                 position: absolute;
-                border-radius: 100%;
+                @include radius(100%);
                 top: -7px;
                 left: -7px;
             }
@@ -329,7 +332,7 @@
     background: #262525;
     padding-bottom:4%;
     .plan-banner{
-        width: 1024px;
+        width:960px; 
         margin: 0 auto;
         div{
             display: inline-block;
@@ -353,20 +356,19 @@
             width: 39.5%;
             text-align: center;
             float: right;
-            height: 450px;
+            height: 426.56px;
             .banner-btn{
                 background: #191818;
                 width: 100%;
-                height: 33%;
+                height: 32%;
                 line-height: 0;
                 padding-top: 16%;
-                min-height:137.16px;
                 cursor: pointer;
                 color:#D29D55 ;
                 transition: all .2s ease-in-out;
             }
             .banner-btn:nth-of-type(2){
-                margin: 1% 0;
+                margin: 2% 0;
             }
             .banner-btn.active{
                 background:#D29D55 ;
@@ -397,7 +399,7 @@
         background: #262525;
         padding:6% 4% 2px;
         margin:0 auto;
-        max-width: 1024px;
+        max-width:960px;
         position: relative;
         .block-title{
             font-size:22px;
@@ -509,7 +511,7 @@
                         height: 14px;
                         border:1px solid #C49B63;
                         position: absolute;
-                        border-radius: 100%;
+                        @include radius(100%);
                         top:-4px;
                         left: -4px;
                     }
@@ -519,7 +521,7 @@
                         height: 20px;
                         border:1px solid #C49B63;
                         position: absolute;
-                        border-radius: 100%;
+                        @include radius(100%);
                         top: -7px;
                         left: -7px;
                     }
@@ -528,7 +530,7 @@
         }
         .block-media{
             .media-top-banner{
-                margin: 40px auto;
+                margin: 40px auto 20px;
                 width:80%;
                 overflow: hidden;
                 background: #191818;
@@ -564,17 +566,17 @@
                 }
             }
             .media-banner{
-                margin: 40px auto;
+                margin: 20px auto 40px;
                 width: 100%;
                 padding: 0 10%;
                 .swiper-slide{
                     padding-bottom:4%;  
                     height: auto;
-                    a:nth-child(2){
-                        margin: 0 5%;
+                    a:nth-child(2){   
+                        margin: 0 3%;
                     }
                     a{
-                        width:30%;
+                        width:31.33%;
                         height: 100%;
                         display: inline-block;
                         overflow: hidden;
@@ -593,6 +595,7 @@
                             background: #191818 ;
                             height: 60px;
                             color: #fff;
+                            @include text-hidden(2);
                             .text-title{
                                 transition: all .3s;
                                 font-size:16px;
@@ -633,7 +636,7 @@
                 .swiper-button-prev,.swiper-button-next{
                     width: 30px;
                     height:30px;
-                    border-radius:100%;
+                    @include radius(100%);
                     border:2px solid #C49B63;
                     background-size: 10px 20px;
                 }
@@ -650,7 +653,7 @@
 .partner{
     margin: 6% auto 4%;
     width:80%;
-    min-width: 1024px;
+    width: 960px;
     .partner-title{
         color:#cb9718;
         font-size: 32px;
@@ -683,13 +686,11 @@
 .nav{
     position: fixed;
     top:22%;
-    right:13%;
+    right:10%;
     text-align: right;
     z-index: 20;
     font-size:22px;
-    width: 10%;
     .nav-list{
-        display: inline-block;
         margin-bottom: 20%;  
         a{
             color:#918C8C
