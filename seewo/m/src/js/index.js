@@ -119,22 +119,9 @@ $(function () {
     $('#point-wrapper').slideUp(100);
     var index = $(this).index() + 1;
     scroll(index);
-  }).on('click', '#play-video', function(){
-    var $video = $(this).find('video');
-    if ($video.get(0).paused) {
-      $video.trigger('play');
-      $(this).find('.play-btn').hide();
-    } else {
-      $video.trigger('pause');
-      $(this).find('.play-btn').show();
-    }
-    return false;
   }).on('click', '#live-btn', function(){
     $('#live-pop').fadeIn();
   }).on('click', '.live-container .pop-close', function(){
     $(this).parents('.live-container').fadeOut();
-  });
-  $('#play-video video').bind('ended',function() {
-    $('#play-video').find('.play-btn').show();
   });
 });

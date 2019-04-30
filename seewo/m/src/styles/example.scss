@@ -106,3 +106,18 @@
     color: #191818;
   }
 }
+
+.go-top {
+  width: .88rem;
+  height: .88rem;
+  line-height: 0;
+  position: fixed;
+  right: .3rem;
+  bottom: 2rem;
+  display: none;
+  z-index: 999;
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 <div class="video-pop" id="diy-video">
   <div class="video-box">
-    <video src=""></video>
+    <video id="video" controls></video>
     <div class="close" id="diy-close">
       <img src="./images/pop-close.png">
     </div>
@@ -11,9 +11,11 @@
     $('[role="video-link"]').click(function(){
       var url = $(this).data('url');
       var $video = $('#diy-video');
-      $video.find('video').attr('src', url);
+      $('#video')[0].pause();
+      $('#video').html('<source src="'+ url +'" type="video/mp4"></source>' );
+      $('#video')[0].load();
       $video.fadeIn(function() {
-        $video.find('video').trigger('play');
+        $('#video')[0].play();
       });
     });
 

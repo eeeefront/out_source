@@ -100,31 +100,9 @@
   background-color: #262525;
 }
 
-.video-box {
-  width: 100%;
-  line-height: 0;
-  background-color: #4a4a4a;
-  position: relative;
-
-  video {
-    width: 100%;
-  }
-
-  .play-btn {
-    width: .8rem;
-    height: .8rem;
-    line-height: 0;
-    @include abs-center;
-
-    img {
-      width: 100%;
-    }
-  }
-}
-
 .second-banner {
   background-color: #181919;
-  padding: .8rem .4rem;
+  padding: 0 .4rem .8rem;
 
   &.five {
     padding: .4rem 0;
