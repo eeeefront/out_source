@@ -73,16 +73,12 @@ $(function () {
   var galleryThumbs3 = new Swiper('#deficul-gallery-thumbs', {
     spaceBetween: 10,
     slidesPerView: 2,
-    freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    pagination: {
-      el: '.dot-pagination',
-    },
   });
 
   var galleryTop3 = new Swiper('#deficul-gallery-top', {
-    spaceBetween: 120,
+    spaceBetween: 10,
     thumbs: {
       swiper: galleryThumbs3,
     },
