@@ -78,15 +78,27 @@ $(function () {
     $(".playVideo").removeClass("playVideo-show")
     $(".playVideo video").attr({"src":"#","poster": ""})
   })
+
+  // 教育更美好轮播图放大
+  $('.story-banner .swiper-wrapper .swiper-slide-box').hover(function (){
+    if($(this).hasClass('active')) return;
+    var nodeBox =  $(".story-banner .swiper-wrapper .swiper-slide-box"),
+        nodeConten = $('.story-banner .swiper-wrapper .box-content')
+    var index = nodeBox.index(this);
+    nodeBox.removeClass('active');
+    nodeConten.removeClass('active');
+    $(this).addClass('active')
+    nodeConten.eq(index).addClass('active')
+  })
+
   // 育才计划banner切换
   $(".plan .banner-btn-block .banner-btn").click(function () {
     if($(this).hasClass('active')) return;
-
     $(".plan .banner-btn-block .banner-btn").removeClass('active');
     $(this).addClass('active');
     var id = $(this).attr('data-id')
     $(".plan .banner-img a").hide();
-    $(".plan .banner-img a:nth-child(" + id + ")").fadeIn();
+    $(".plan .banner-img a:nth-child(" + id + ")").show();
   })
   //锚点跳转滑动效果            
   $('a[href*=#],area[href*=#]').click(function () {

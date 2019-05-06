@@ -182,6 +182,24 @@ body{
             display: block;
             transition: 0.6s;
         }
+        span{
+            font-size: 18px;    
+            position: absolute;
+            right: 18%;
+            width: 23px;
+            height: 22px;
+            top: 12%;
+            @include radius(100%);
+            color: #C49B63;
+            border:1px solid #C49B63;
+            line-height: 1;
+            text-align: center
+        }
+        span:hover{
+            color:#fff;
+            background: #C49B63;
+            cursor: pointer;
+        }
     }
     .playVideo-show{
         opacity: 1;
