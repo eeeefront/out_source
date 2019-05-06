@@ -134,17 +134,17 @@
         width: 20%;
         display: inline-block;
         position: relative;
-        // float: left;
         img {
           display: block;
-          transition: transform .3s linear;
           width: 100%;
+          @include transition(.1s);
         }
       }
 
       .swiper-slide-box.active {
         z-index: 10 ;
         img {
+          @include transition(.5s);
           transform: scale(1.1);
         }
       }
