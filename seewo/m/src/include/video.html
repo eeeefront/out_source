@@ -1,6 +1,6 @@
 <div class="video-pop" id="diy-video">
   <div class="video-box">
-    <video id="video" controls></video>
+    <video id="video" preload="none" controls=""></video>
     <div class="close" id="diy-close">
       <img src="./images/pop-close.png">
     </div>
@@ -15,7 +15,7 @@
       $('#video').html('<source src="'+ url +'" type="video/mp4"></source>' );
       $('#video')[0].load();
       $video.fadeIn(function() {
-        $('#video')[0].play();
+        $('#video').trigger('play');
       });
     });
 

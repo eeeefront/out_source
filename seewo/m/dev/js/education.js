@@ -1,1 +1,1 @@
-$(function(){$("body").on("click","#play-video",function(){var i=$(this).find("video");return i.get(0).paused?(i.trigger("play"),$(this).find(".play-btn").hide()):(i.trigger("pause"),$(this).find(".play-btn").show()),!1}),$("#play-video video").bind("ended",function(){$("#play-video").find(".play-btn").show()})});
+$(function(){});

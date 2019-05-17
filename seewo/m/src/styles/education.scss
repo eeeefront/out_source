@@ -29,6 +29,7 @@
       height: .92rem;
       line-height: 0;
       @include abs-center;
+      cursor: pointer;
 
       img {
         width: 100%;

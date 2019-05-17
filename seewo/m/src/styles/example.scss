@@ -114,8 +114,9 @@
   position: fixed;
   right: .3rem;
   bottom: 2rem;
+  outline: none;
   display: none;
-  z-index: 999;
+  z-index: 99999;
 
   img {
     width: 100%;
