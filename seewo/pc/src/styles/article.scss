@@ -6,7 +6,7 @@ body{
 }
 .banner{
     width: 100%;
-    min-width: 960px;
+    min-width: 1336px;
     height: 40vh;
     position: relative;
     img{
@@ -16,7 +16,7 @@ body{
     }
 }
 .content{
-    width: 960px;
+    width: 1336px;
     margin:  0 auto;
     // 导航
     .nav{
@@ -27,24 +27,24 @@ body{
         }
     }
     .article{
-        width: 750px;
+        width:1000px;
         margin:  0 auto;
         .article-title{
-            font-size: 24px;
+            font-size: 40px;
             color:#333333;
             text-align: center;
-            margin-bottom: 2.5%;
+            margin-bottom: 20px;
         }
         .article-name{
-            font-size: 14px;
+            font-size: 16px;
             color:#191818;
-            margin-bottom: 2%;
+            margin-bottom: 20px;
             span{
                 margin-left:12px;
             }
         }
         .article-content{
-            padding: 4% 0;
+            padding: 40px 0;
             border-top:2px solid #c49b63;
             .play{
                 cursor: pointer;
@@ -54,8 +54,10 @@ body{
             }
             p{
                 color: #666;
+                font-size: 16px;
             }
             b{
+                font-size: 20px;
                 margin: 4% 0;
                 display: block;
                 color: #151515;
