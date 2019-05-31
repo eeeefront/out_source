@@ -2,13 +2,13 @@
 @import "_common";
 @import "swiper.min.css";
 .text{
-    width:960px;
+    width:1336px;
     margin:0 auto 40px;
     text-align: center;
     .text-title{
         color: #CB9718;
-        font-size: 36px;
-        margin-top: 45px;
+        font-size: 64px;
+        margin-top: 80px;
         text-align: left;
     }
 }
@@ -16,41 +16,40 @@
 .technology{
     background:#262525 ;
     color: #fff;
-    padding: 8% 0;
+    padding:176px 0 144px;
     .technology-position{
-        font-size: 12px;
-        width:960px;
-        margin: 0 auto 9px;
+        font-size: 24px;
+        width:1336px;
+        margin: 0 auto 18px;
     }
     .technology-title{
-        font-size: 44px;
-        width:960px;
-        margin: 0 auto 9px;
+        font-size: 86px;
+        width:1336px;
+        margin: 0 auto 18px;
         font-weight: bold;
         letter-spacing: 2px;
     }
     .technology-title-2{
-        font-size: 18px;
-        width:960px;
+        font-size: 32px;
+        width:1336px;
         margin: 0 auto;
     }
     .technology-description{
-        font-size: 12px;
-        width:960px;
-        margin: 30px auto;
+        font-size: 24px;
+        width:1336px;
+        margin: 48px auto 60px;
     }
     .technology-btn{
-        width:960px;
+        width:1336px;
         margin: 0 auto 0;
         div{
-            font-size: 16px;
+            font-size: 28px;
             display: inline-block;
             border: 1px solid #C39A61;
             text-align: center;
-            width: 100px;
-            height: 30px;
-            line-height: 30px;
-            margin-right:25.5px;
+            width: 174px;
+            height: 50px;
+            line-height: 50px;
             transition: all .3s ; 
         }
         div:hover{
@@ -62,11 +61,11 @@
 // 大会嘉宾
 .guest{
     .guest-banner{
-        width: 960px;
+        width: 1336px;
         margin:0 auto;
         .swiper-slide{
-            width: 23%;
-            height: 281.58px;
+            width: 23.57%;
+            height: 410px;
             overflow: hidden;
             img{
                 width: 100%;
@@ -78,7 +77,7 @@
             }
         }
         .swiper-slide-active{
-            width:31% !important;
+            width:29.19% !important;
             img:nth-child(1){
                 visibility: visible;
                 position: relative;
@@ -89,32 +88,32 @@
 // 日程安排
 .arrange{
     .list{
-        border-top: 1px solid #cb9718;
-        border-bottom: 1px solid #cb9718;
-        width: 960px;
+        border-top: 3px solid #cb9718;
+        border-bottom: 3px solid #cb9718;
+        width: 1336px;
         margin: auto;
-        padding:3% 0;
+        padding:32px 0;
         .list-box{
             overflow: hidden;
             .list-left{
                 color: #B1B1B1;
-                padding-right:6%;
                 display: inline-block;
-                width: 10%;
+                width: 11%;
                 float:left;
                 .list-left-title{
-                    font-size: 18px;
+                    font-size: 34px;
+                    margin-bottom: 8px;
                 }
                 .list-left-timetable{
-                    font-size: 12px;
+                    font-size: 24px;
                 }
             }
             .list-right{
                 border-left:1px solid #666;
-                width: 90%;
+                width: 89%;
                 display: inline-block;
                 padding-left:6%;
-                font-size:12px;
+                font-size:20px;
                 color: #B1B1B1;
                 float: left;
                 .lists{
@@ -128,13 +127,14 @@
                     .meeting{
                         width: 50%;
                         color:#fff;
+                        font-size:24px;
                     }
                     .name{
-                        width: 40%;
+                        width: 39%;
                         text-align: center;
                     }
                     .time{
-                        width: 10%;
+                        width: 11%;
                         text-align: right;
                     }
                 }
@@ -146,10 +146,10 @@
 // 庆典
 .celebration{
     .celebration-banner{
-        margin: 40px auto;
-        width:960px;
+        margin: 80px auto;
+        width:1336px;
         .swiper-slide{  
-            padding-bottom:2%;
+            padding-bottom:4%;
             position: relative;
             text-align: center;
             .swiper-slide-box{
@@ -172,18 +172,18 @@
                     width: 100%;
                     height: 45%;
                     padding: 0 11%;
-                    font-size: 12px;
+                    font-size: 16px;
                     transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1);
                     .title{
                         font-weight: bold;
-                        font-size: 20px;
+                        font-size: 28px;
                     }
                     .line{
                         width: 30%;
-                        height:3px;
+                        height:4px;
                         @include linear-gradient(to left, #F3D181 , #CB9718);
                         transition: all 1s;
-                        margin:7% 0;
+                        margin:20px 0;
                     }
                     .description{
                         transition: all .2s ease-in-out;
@@ -195,7 +195,7 @@
                 }
             }
             .swiper-slide-box:nth-of-type(3n){
-                margin: 0 0 20px 0;
+                margin: 0 0 2% 0;
             }
             .swiper-slide-box:hover{
                 .box-text{
@@ -221,40 +221,40 @@
             text-align: center;
             z-index: 10;
             position: absolute;
-            bottom: 1% !important;
+            bottom: 2% !important;
             .swiper-pagination-bullet {
-                width: 8px;
-                height: 8px;
+                width: 19px;
+                height: 19px;
                 background: transparent;
                 border: 1px solid #C49B63;
                 margin: 0 1%;
             }
             .swiper-pagination-bullet-active {
                 opacity: 1;
-                width: 6px;
-                height: 6px;
+                width: 14px;
+                height: 14px;
                 background: #C49B63;
                 position: relative;
             }
-            .swiper-pagination-bullet-active::after{
-                content: '';
-                width: 10px;
-                height: 10px;
-                border:1px solid #C49B63;
-                position: absolute;
-                @include radius(100%);
-                top:-4px;
-                left: -4px;
-            }
-            .swiper-pagination-bullet-active::before{
-                content: '';
-                width: 16px;
-                height: 16px;
-                border:1px solid #C49B63;
+            .swiper-pagination-bullet-active::after {
+            content: '';
+                width: 24px;
+                height: 24px;
+                border: 1px solid #C49B63;
                 position: absolute;
                 @include radius(100%);
                 top: -7px;
                 left: -7px;
+            }
+            .swiper-pagination-bullet-active::before {
+            content: '';
+                width: 36px;
+                height: 36px;
+                border: 1px solid #C49B63;
+                position: absolute;
+                @include radius(100%);
+                top: -13px;
+                left: -13px;
             }
         }
     }
@@ -263,11 +263,10 @@
 // 会场指引
 .guide{
     .list{
-        border-top: 1px solid #cb9718;
-        border-bottom: 1px solid #cb9718;
-        width: 960px;
+        border-top: 3px solid #cb9718;
+        width: 1336px;
         margin: auto;
-        padding:3% 0;
+        padding:40px 0;
         overflow: hidden;
         color: #fff;
         >div{
@@ -278,15 +277,14 @@
             position: relative;
             img{
                 position: absolute;    
-                top: 18%;
-                left: 5%;
-
+                top: 96px;
+                left: 0;
             }
             .text-block{
-                margin:18%;
-                font-size:14px;
+                margin:92px 12%;
+                font-size:24px;
                 .title{
-                    font-size: 24px;
+                    font-size: 34px;
                     margin-bottom: 10px;
                 }
             }
@@ -302,19 +300,22 @@
 // 合作媒体
 .partner{
     margin: 6% auto 4%;
-    width: 960px;
+    width: 1336px;
     .partner-title{
         color:#cb9718;
-        font-size: 36px;
+        font-size: 64px;
         text-align: left;
-        margin-bottom: 2%;
+        line-height: 1;
+        margin-bottom: 40px;
     }
     .partner-content{
+        border-top: 3px solid #cb9718;
         width: 100%;
         margin: 0 auto;
+        padding: 40px 0 0;
         .content-box{
             width:9.1% ;
-            height:30px;
+            height:54px;
             background: #fff;
             margin: 0 1% 1% 0;
             display: inline-block;

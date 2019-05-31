@@ -126,10 +126,10 @@
 }
 
 // 动画时间
-@mixin transition($time) {
-  -webkit-transition: $time;
-  -moz-transition: $time;
-  transition: $time;
+@mixin transition($style,$time,$ant) {
+  -webkit-transition: $style $time $ant;
+  -moz-transition:$style $time $ant;
+  transition:$style $time $ant;
 }
 
 //动画放大
