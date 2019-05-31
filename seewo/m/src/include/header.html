@@ -1,9 +1,9 @@
 <div class="header">
   <div class="header-content">
-    <a href="./" class="logo"><img src="./images/logo.png"></a>
+    <a href="javascript:;" class="logo"><img src="./images/logo.png"></a>
     @if (context.title === 'index' ) { <a href="javascript:;" class="menu-btn" id="menu"><img class="menu" src="./images/menu.png"><img class="close" src="./images/close.png" style="display: none;"></a> }
     @if (context.title === 'example' ) { <a href="javascript:;" class="search-btn" id="search"><span class="search">快速查找<img src="./images/menu.png"></span><img style="display: none;" class="close" src="./images/close.png" ></a> }
-    @if (context.title !== 'index' && context.title !== 'example' ) { <a href="./index.html" class="menu-btn"><img src="./images/home.png"></a> }
+    @if (context.title !== 'index' && context.title !== 'example' ) { <a href="./example.html" class="menu-btn"><img src="./images/back.png"></a> }
   </div>
 
   <div class="point-wrapper" id="point-wrapper">
