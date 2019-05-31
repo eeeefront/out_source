@@ -26,7 +26,7 @@ gulp.task('htmlMin', function () {
     minifyJS: true, //压缩页面JS
     minifyCSS: true //压缩页面CSS
   };
-  gulp.src(['src/*.html', '!src/include/**.html'])
+  return gulp.src(['src/*.html', '!src/include/**.html'])
     .pipe(changed('dev', {
       hasChanged: changed.compareSha1Digest
     }))
@@ -44,7 +44,7 @@ gulp.task('htmlMin', function () {
 });
 
 gulp.task('sass', function () {
-  gulp.src('src/styles/*.scss')
+  return gulp.src('src/styles/*.scss')
     .pipe(changed('dev/css', {
       hasChanged: changed.compareSha1Digest
     }))
@@ -61,7 +61,7 @@ gulp.task('sass', function () {
 
 // 将所有js文件连接为一个文件并压缩，存到public/js
 gulp.task('uglifyJs', function () {
-  gulp.src(['src/js/**/*.js'])
+  return gulp.src(['src/js/**/*.js'])
     .pipe(changed('dev/js/**/', {
       hasChanged: changed.compareSha1Digest
     }))
@@ -75,7 +75,7 @@ gulp.task('uglifyJs', function () {
 
 //压缩  img文件
 gulp.task('testImagemin', function () {
-  gulp.src('src/images/**/*.{png,jpg,gif,jpeg,ico}')
+  return gulp.src('src/images/**/*.{png,jpg,gif,jpeg,ico}')
     .pipe(changed('dev/images/**/*', {
       hasChanged: changed.compareSha1Digest
     }))

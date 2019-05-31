@@ -30,21 +30,21 @@
 }
 
 .text {
-  width: 735px;
-  margin: 0 auto 40px;
+  width: 991px;
+  margin: 0 auto 80px;
   text-align: center;
   overflow: hidden;
 
   .text-title {
     color: #CB9718;
-    font-size: 36px;
-    margin-top: 45px;
+    font-size: 64px;
+    margin-top: 80px;
   }
 
   .text-description {
-    font-size: 12px;
+    font-size: 16px;
     color: #fff;
-    margin: 8px 0 40px;
+    margin: 10px 0 80px;
   }
 }
 
@@ -87,7 +87,7 @@
 
   .story-banner {
     margin: 0 auto 40px;
-    width: 960px;
+    width: 1336px;
 
     .swiper-slide {
       padding: 4% 20px 22%;
@@ -106,24 +106,24 @@
 
         .box-title {
           color: #fff;
-          font-size: 20px;
-          margin-bottom: 6px;
+          font-size: 28px;
+          margin-bottom: 10px;
         }
 
         .box-name {
-          font-size: 18px;
-          margin-bottom: 6px;
+          font-size: 26px;
+          margin-bottom: 10px;
         }
 
         .box-line {
-          height: 2px;
+          height: 4px;
           width: 12%;
-          margin-bottom: 6px;
+          margin-bottom: 13px;
           @include linear-gradient(to left, #F3D181, #CB9718);
         }
 
         .box-description {
-          font-size: 12px;
+          font-size: 16px;
         }
       }
       .box-content.active {
@@ -137,14 +137,14 @@
         img {
           display: block;
           width: 100%;
-          @include transition(.1s);
+          @include transition(all,.1s,linear);
         }
       }
 
       .swiper-slide-box.active {
         z-index: 10 ;
         img {
-          @include transition(.5s);
+          @include transition(all,.5s,linear);
           transform: scale(1.1);
         }
       }
@@ -157,8 +157,8 @@
       bottom: 30% !important;
 
       .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
+        width: 19px;
+        height: 19px;
         background: transparent;
         border: 1px solid #C49B63;
         margin: 0 1%;
@@ -166,32 +166,32 @@
 
       .swiper-pagination-bullet-active {
         opacity: 1;
-        width: 10px;
-        height: 10px;
+        width: 14px;
+        height: 14px;
         background: #C49B63;
         position: relative;
       }
 
       .swiper-pagination-bullet-active::after {
         content: '';
-        width: 14px;
-        height: 14px;
-        border: 1px solid #C49B63;
-        position: absolute;
-        @include radius(100%);
-        top: -4px;
-        left: -4px;
-      }
-
-      .swiper-pagination-bullet-active::before {
-        content: '';
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         border: 1px solid #C49B63;
         position: absolute;
         @include radius(100%);
         top: -7px;
         left: -7px;
+      }
+
+      .swiper-pagination-bullet-active::before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        border: 1px solid #C49B63;
+        position: absolute;
+        @include radius(100%);
+        top: -13px;
+        left: -13px;
       }
     }
   }
@@ -201,42 +201,42 @@
 .technology {
   background: #262525;
   color: #fff;
-  padding: 8% 0;
+  padding: 164px 0 226px;
 
   .technology-position {
-    font-size: 12px;
-    width: 960px;
-    margin: 0 auto 9px;
+    font-size: 24px;
+    width: 1336px;
+    margin: 0 auto 18px;
   }
 
   .technology-title {
-    font-size: 44px;
-    width: 960px;
-    margin: 0 auto 9px;
+    font-size: 86px;
+    width: 1336px;
+    margin: 0 auto 18px;
     font-weight: bold;
     letter-spacing: 2px;
     font-family: MFBanHei_Noncommercial-Regular;
   }
 
   .technology-description {
-    font-size: 18px;
-    width: 960px;
-    margin: 0 auto 52.5px;
+    font-size: 36px;
+    width: 1336px;
+    margin: 0 auto 105px;
   }
 
   .technology-btn {
-    width: 960px;
+    width: 1336px;
     margin: 0 auto;
 
     div {
-      font-size: 16px;
+      font-size: 28px;
       display: inline-block;
       border: 1px solid #C39A61;
       text-align: center;
-      width: 100px;
-      height: 30px;
-      line-height: 30px;
-      margin-right: 25.5px;
+      width: 174px;
+      height:50px;
+      line-height: 50px;
+      margin-right: 50px;
       transition: all .3s;
 
       a {
@@ -254,11 +254,11 @@
 // 庆典
 .celebration {
   .celebration-banner {
-    margin: 40px auto;
-    width: 960px;
+    margin: 80px auto;
+    width: 1336px;
 
     .swiper-slide {
-      padding-bottom: 2%;
+      padding-bottom: 3%;
       position: relative;
       text-align: center;
 
@@ -288,12 +288,12 @@
           width: 100%;
           height: 45%;
           padding: 0 11%;
-          font-size: 12px;
+          font-size: 16px;
           transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1);
 
           .title {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 24px;
             position: relative;
 
             .playImg {
@@ -308,7 +308,7 @@
 
           .line {
             width: 30%;
-            height: 3px;
+            height: 4px;
             @include linear-gradient(to left, #F3D181, #CB9718);
             transition: all 1s;
             margin: 7% 0;
@@ -326,7 +326,7 @@
       }
 
       .swiper-slide-box:nth-of-type(3n) {
-        margin: 0 0 20px 0;
+        margin: 0 0 2% 0;
       }
 
       .swiper-slide-box:hover {
@@ -362,11 +362,11 @@
       text-align: center;
       z-index: 10;
       position: absolute;
-      bottom: 1% !important;
+      bottom: 1.5% !important;
 
       .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
+        width: 19px;
+        height: 19px;
         background: transparent;
         border: 1px solid #C49B63;
         margin: 0 1%;
@@ -374,32 +374,32 @@
 
       .swiper-pagination-bullet-active {
         opacity: 1;
-        width: 10px;
-        height: 10px;
+        width: 14px;
+        height: 14px;
         background: #C49B63;
         position: relative;
       }
 
       .swiper-pagination-bullet-active::after {
         content: '';
-        width: 14px;
-        height: 14px;
-        border: 1px solid #C49B63;
-        position: absolute;
-        @include radius(100%);
-        top: -4px;
-        left: -4px;
-      }
-
-      .swiper-pagination-bullet-active::before {
-        content: '';
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         border: 1px solid #C49B63;
         position: absolute;
         @include radius(100%);
         top: -7px;
         left: -7px;
+      }
+
+      .swiper-pagination-bullet-active::before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        border: 1px solid #C49B63;
+        position: absolute;
+        @include radius(100%);
+        top: -13px;
+        left: -13px;
       }
     }
   }
@@ -412,7 +412,7 @@
   padding-bottom: 4%;
 
   .plan-banner {
-    width: 960px;
+    width: 1336px;
     margin: 0 auto;
 
     div {
@@ -420,8 +420,8 @@
     }
 
     .banner-img {
-      width: 60%;
-      margin-right: 0.5%;
+      width: 63.57%;
+      margin-right: 0.45%;
 
       a {
         width: 100%;
@@ -439,24 +439,25 @@
     }
 
     .banner-btn-block {
-      width: 39.5%;
+      width: 35.08%;
       text-align: center;
       float: right;
-      height: 426.56px;
+      height: 628.94px;
 
       .banner-btn {
         background: #191818;
         width: 100%;
         height: 32%;
         line-height: 0;
-        padding-top: 18%;
+        padding-top: 21.5%;
+        font-size: 28px;
         cursor: pointer;
         color: #D29D55;
         transition: all .2s ease-in-out;
       }
 
       .banner-btn:nth-of-type(2) {
-        margin: 2% 0;
+        margin: 2.5% 0;
       }
 
       .banner-btn.active {
@@ -471,14 +472,15 @@
 .development {
   .text {
     width: 100%;
-    min-width: 735px;
+    min-width:920px;
     .text-btn {
-      margin: -20px auto 40px;
-      font-size: 12px;
+      margin: -40px auto 60px;
+      font-size: 16px;
       border: 1px solid #CB9718;
       color: #CB9718;
-      width: 90px;
-      padding: 4px 0;
+      width: 118px;
+      height: 32px;
+      line-height: 32px;
       cursor: pointer;
       transition: all .3s;
     }
@@ -491,27 +493,27 @@
 
   .development-block {
     background: #262525;
-    padding: 6% 4% 2px;
+    padding: 6% 2% 2px;
     margin: 0 auto;
-    max-width: 960px;
+    width: 1336px;
     position: relative;
 
     .block-title {
-      font-size: 22px;
+      font-size: 34px;
       text-align: center;
       color: #fff;
 
       .title-line {
-        height: 2px;
-        width: 90px;
-        margin: 1% auto;
+        height:4px;
+        width:134px;
+        margin: 10px auto;
         @include linear-gradient(to left, #F3D181, #CB9718);
       }
     }
 
     .block-education {
       .block-education-content {
-        margin: 50px auto 0;
+        margin: 96px auto 0;
         width: 100%;
         overflow: hidden;
 
@@ -529,26 +531,27 @@
             width: 100%;
             height: 5vh;
             img {
-              width:25%;
+              width:20%;
             }
             .user-icon{
-              width:32%;
+              width:27%;
             }
             .article-icon{
-              width:20%;
+              width:15%;
             }
           }
 
           .box-title {
             color: #C49B63;
-            font-size: 18px;
+            font-size: 28px;
             margin: 20px 0;
           }
 
           .box-description {
             text-align: left;
             color: #D6D2D2;
-            max-width: 210px;
+            max-width: 272px;
+            font-size: 18px;
             margin: 0 auto;
             font-size: 14px;
           }
@@ -564,7 +567,7 @@
         width: 100%;
 
         .swiper-slide {
-          padding-bottom:6%;
+          padding-bottom:7%;
           text-align: center;
           height: auto;
 
@@ -577,7 +580,7 @@
             }
 
             .banner-img {
-              width: 65%;
+              width: 64.84%;
 
               img {
                 width: 100%;
@@ -586,21 +589,21 @@
             }
 
             .banner-text {
-              width: 35%;
+              width: 35.16%;
               text-align: center;
               padding: 0 3%;
               background: #191818;
 
               .text-title {
-                font-size: 16px;
+                font-size: 24px;
                 color: #C49B63;
-                margin: 50px 0 20px;
+                margin: 80px 0 40px;
               }
 
               .text-description {
-                font-size: 12px;
+                font-size: 18px;
                 color: #D6D2D2;
-                line-height: 30px;
+                line-height: 32px;
                 text-align: left;
               }
             }
@@ -611,44 +614,44 @@
           text-align: center;
           z-index: 10;
           position: absolute;
-          bottom: 1% !important;
+          bottom: 2% !important;
 
           .swiper-pagination-bullet {
-            width: 12px;
-            height: 12px;
+            width: 19px;
+            height: 19px;
             background: transparent;
             border: 1px solid #C49B63;
             margin: 0 1%;
           }
-
+    
           .swiper-pagination-bullet-active {
             opacity: 1;
-            width: 10px;
-            height: 10px;
+            width: 14px;
+            height: 14px;
             background: #C49B63;
             position: relative;
           }
-
+    
           .swiper-pagination-bullet-active::after {
             content: '';
-            width: 14px;
-            height: 14px;
-            border: 1px solid #C49B63;
-            position: absolute;
-            @include radius(100%);
-            top: -4px;
-            left: -4px;
-          }
-
-          .swiper-pagination-bullet-active::before {
-            content: '';
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
             border: 1px solid #C49B63;
             position: absolute;
             @include radius(100%);
             top: -7px;
             left: -7px;
+          }
+    
+          .swiper-pagination-bullet-active::before {
+            content: '';
+            width: 36px;
+            height: 36px;
+            border: 1px solid #C49B63;
+            position: absolute;
+            @include radius(100%);
+            top: -13px;
+            left: -13px;
           }
         }
       }
@@ -656,8 +659,8 @@
 
     .block-media {
       .media-top-banner {
-        margin: 40px auto 20px;
-        width: 80%;
+        margin: 60px auto 40px;
+        width: 80.54%;
         overflow: hidden;
         background: #191818;
 
@@ -685,13 +688,13 @@
             padding: 0 3%;
 
             .text-title {
-              font-size: 20px;
+              font-size: 28px;
               color: #C49B63;
               margin: 50px 0 20px;
             }
 
             .text-description {
-              font-size: 12px;
+              font-size: 16px;
               color: #D6D2D2;
               line-height: 1.5;
               text-align: left;
@@ -740,21 +743,21 @@
 
             .banner-text {
               transition: all .3s;
-              padding: 4% 10%;
+              padding: 20px 10%;
               background: #191818;
-              height: 60px;
+              height: 90px;
               color: #fff;
               @include text-hidden(2);
 
               .text-title {
                 transition: all .3s;
-                font-size: 12px;
+                font-size: 18px;
                 overflow: hidden;
               }
 
               .text-description {
                 transition: all .3s;
-                font-size: 12px;
+                font-size: 18px;
                 line-height: 1.5;
                 height: 0;
                 overflow: hidden;
@@ -793,8 +796,8 @@
 
         .swiper-button-prev,
         .swiper-button-next {
-          width: 30px;
-          height: 30px;
+          width: 48px;
+          height: 48px;
           @include radius(100%);
           border: 2px solid #C49B63;
           background-size: 10px 20px;
@@ -814,11 +817,11 @@
 .partner {
   margin: 6% auto 4%;
   width: 80%;
-  width: 960px;
+  min-width: 1336px;
 
   .partner-title {
     color: #cb9718;
-    font-size: 32px;
+    font-size: 64px;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -856,7 +859,7 @@
   right: 10%;
   text-align: right;
   z-index: 20;
-  font-size: 22px;
+  font-size: 24px;
 
   .nav-list {
     margin-bottom: 20%;
@@ -871,7 +874,7 @@
   .nav-list:hover {
     a {
       color: #fff;
-      @include transition(.5s);
+      @include transition(all,.5s,linear);
     }
   }
 }
@@ -879,10 +882,9 @@
 @media (max-width: 1580px) {
   .nav {
     width: 120px;
-    top: 30%;
     right: 50%;
     margin-right: -600px;
-    font-size: 16px;
+    font-size: 18px;
 
     .nav-list {
       height: 48px;

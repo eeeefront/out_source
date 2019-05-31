@@ -1,0 +1,20 @@
+@for (var i = 0; i < data.length; i++) {
+<div class="box page@page">
+  <div class='box-title'>
+      <span class="box-title-name">`+data[i].name+`</span>
+      <!-- <span class="box-title-school">希沃小学</span> -->
+  </div>
+  <div class='box-img'>
+      <a href="http://1139906024.ax.nofollow.51wtp.com/index.php/toupiao/h5/detail?vid=nxedz1pz2n8o640&id=`+data[i].id+`"><img src="../images/by/`+data[i].img+`" alt="" srcset=""></a>
+  </div>
+  <div class='box-text'>
+      <div class='box-text-title'>`+data[i].title+`</div>
+      <div class='box-text-description'>
+        `+data[i].description+`
+      </div>
+  </div>
+  <div class='box-bottom'>
+    <a href="http://1139906024.ax.nofollow.51wtp.com/index.php/toupiao/h5/detail?vid=nxedz1pz2n8o640&id=`+data[i].id+`"><button>去投票</button></a>
+  </div>
+</div>
+}
