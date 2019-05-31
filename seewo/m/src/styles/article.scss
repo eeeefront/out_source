@@ -7,6 +7,7 @@
   .art-title {
     font-size: .48rem;
     color: #333;
+    font-weight: bold;
     @include text-overflow();
     padding-bottom: .4rem;
     position: relative;
@@ -17,18 +18,33 @@
     padding: .4rem 0;
 
     h5 {
-      font-size: .32rem;
+      font-size: .48rem;
       color: #2A2A2A;
       line-height: .56rem;
-      margin-bottom: .4rem;
+      margin-bottom: .1rem;
     }
 
     p {
       font-size: .32rem;
       color: #666;
       line-height: .56rem;
-      margin-bottom: .5rem;
       text-align: justify;
+
+      a {
+        color: #666;
+      }
+
+      & + h5 {
+        margin-top: .5rem;
+      }
+
+      span {
+        color: #c49b63;
+      }
+
+      &.mt50 {
+        margin-top: .5rem;
+      }
     }
 
     .img-box {
