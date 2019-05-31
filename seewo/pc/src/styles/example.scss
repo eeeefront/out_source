@@ -6,7 +6,7 @@ body{
 }
 .banner{
     width: 100%;
-    min-width: 960px;
+    min-width: 1336px;
     height: 40vh;
     position: relative;
     img{
@@ -254,4 +254,26 @@ body{
     }
 }
 .mode{
+}
+@media (max-width: 1335px ) {
+    
+.banner{
+    width: 100%;
+    min-width:960px !important;
+}
+.content{
+    width: 960px !important;
+    .card-list .box {
+        height: 505px !important;
+    }
+    .card-list .box .box-title .box-title-name{
+        font-size: 18px !important;
+    }
+    .card-list .box .box-text .box-text-title{
+        font-size: 16px!important;
+    }
+    .card-list .box .box-text .box-text-description{
+        font-size: 12px;
+    }
+}
 }

@@ -216,3 +216,28 @@ body{
         }
     }
 }
+@media (max-width: 1335px ) {
+    .header{
+        .header-logo{
+            max-width: 960px !important;
+            margin: 0 auto;
+        }
+    }
+    .header{
+        height: 60px;
+        .header-logo{
+            max-width: 960px !important;
+            img{
+                width: 367px !important;
+            }
+            .gohome{
+                height: 60px !important;
+                line-height: 60px !important;
+                a{
+                    color:#fff !important;
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
