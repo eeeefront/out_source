@@ -154,7 +154,7 @@
       text-align: center;
       z-index: 10;
       position: absolute;
-      bottom: 30% !important;
+      bottom: 30% ;
 
       .swiper-pagination-bullet {
         width: 19px;
@@ -817,7 +817,7 @@
 .partner {
   margin: 6% auto 4%;
   width: 80%;
-  min-width: 1336px;
+  width: 1336px;
 
   .partner-title {
     color: #cb9718;
@@ -882,14 +882,148 @@
 @media (max-width: 1580px) {
   .nav {
     width: 120px;
-    right: 50%;
-    margin-right: -600px;
+    right: 8%;
     font-size: 18px;
 
     .nav-list {
       height: 48px;
       line-height: 48px;
       margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 1335px ) {
+  .header{
+      .header-logo{
+          max-width: 960px !important;
+      }
+  }
+  .story-banner {
+    width: 960px!important;
+  }
+  .technology {
+    .technology-position,.technology-title,.technology-description, .technology-btn{
+      width: 960px!important;
+    }
+    .technology-position{
+      font-size:18px;
+    }
+    .technology-title{
+      font-size:72px;
+    }
+    .technology-description{
+      font-size:32px;
+    }
+    .technology-btn div {
+      font-size: 24px;
+      width: 150px;
+      height: 46px;
+      line-height: 46px;
+    }
+  }
+  .celebration {
+    .celebration-banner {
+      width: 960px !important;
+      .box-text .title .playImg{
+        left: 34% !important;
+        top: 14%;
+      }
+    }
+  }
+  
+  .plan {
+    .plan-banner {
+      width: 960px !important;
+      .banner-btn-block{
+        height: 455px;
+        .banner-btn{
+          font-size:20px;
+        }
+      }
+    }
+  }
+  .story-banner {
+    .swiper-slide {
+      padding: 4% 20px 24% !important;
+      .box-content {
+        .box-title {
+          font-size: 22px !important;
+        }
+        .box-name {
+          font-size: 18px !important;
+        }
+        .box-description {
+          font-size: 12px !important;
+        }
+      }
+    }
+    .story-swiper-pagination {
+      bottom: 32%!important;
+    }
+  }
+  .development-block {
+    width: 960px !important;
+    .block-title{
+      font-size:30px!important;
+      .title-line{
+        width:110px !important;
+      }
+    }
+    .block-education .block-education-content .content-box{
+      .box-title{
+        font-size: 24px!important;
+        margin: 16px 0!important;
+      }
+      .box-description {
+        font-size: 12px !important;
+      }
+    }
+    .block-technology .technology-banner .banner-text{
+      .text-title{
+        font-size: 18px !important;
+      } 
+      .text-description {
+        font-size: 12px !important;
+        line-height: 24px !important;
+      }
+    } 
+    .block-media {
+      .media-top-banner a .banner-text{
+        .text-title{
+          font-size: 22px !important;
+        }
+        
+        .text-description {
+          font-size: 12px !important;
+          line-height: 24px !important;
+        }
+      } 
+      .media-banner .swiper-slide a .banner-text{
+        .text-title{
+          font-size: 14px !important;
+        }
+        
+        .text-description {
+          font-size: 14px !important;
+        }
+      } 
+    }
+  }
+  .partner {
+    width: 960px;
+    .partner-title {
+      font-size: 48px;
+    }
+  }
+  .text {
+    width: 991px;
+    margin: 0 auto 80px;
+    .text-title {
+      font-size: 48px;
+    }
+  
+    .text-description {
+      font-size: 14px;
     }
   }
 }

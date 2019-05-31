@@ -325,3 +325,106 @@
         }
     }
 }
+@media (max-width: 1335px ) {
+    .text{
+        width:960px !important;
+        .text-title {
+            font-size: 48px!important;
+        }
+    }
+    .technology{
+        .technology-position{
+            width:960px !important;
+            font-size:18px;
+        }
+        .technology-title{
+            width:960px !important;
+            font-size:72px;
+        }
+        .technology-title-2{
+            width:960px !important;    
+            font-size: 28px;
+        }
+        .technology-description{
+            width:960px !important;
+            font-size:28px;
+        }
+        .technology-btn{
+            width:960px !important;
+            div{
+                font-size: 24px;
+                width: 150px;
+                height: 46px;
+                line-height: 46px;
+            }
+        }
+    }
+    .guest{
+        .guest-banner{
+            width: 960px;
+            .swiper-slide{
+                height: 301.69px;
+            }
+        }
+    }
+    .arrange{
+        .list{
+            width: 960px;
+            .list-box .list-left .list-left-title{
+                font-size: 28px !important;
+            }
+            .list-right {
+                font-size: 16px !important;
+                .lists .meeting{
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+    .celebration{
+        .celebration-banner{
+            width:960px;
+            .swiper-slide{  
+                .box-text{
+                    font-size: 12px!important;
+                    .title{
+                        font-size: 22px !important;
+                    }
+                    .line{
+                        margin:10px 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    .guide{
+        .list{
+            width: 960px;
+            padding:20px 0;
+            .list-text {
+                img {
+                    top: 65px;
+                }
+                .text-block{
+                    margin: 62px 12%;
+                    font-size: 16px!important;
+                    .title {
+                        font-size: 28px!important;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .partner{
+        width: 960px;
+        .partner-title{
+            font-size: 48px;
+        }
+        .partner-content{
+            .content-box{
+                height:40px;
+            }
+        }
+    }
+}

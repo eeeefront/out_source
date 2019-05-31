@@ -81,3 +81,17 @@ body{
         }
     }
 }
+@media (max-width: 1335px ) {
+    .banner{
+        min-width: 960px !important;
+    }
+    .content{
+        width:960px !important;
+        .article{
+            width:900px;
+            .article-title{
+                font-size: 36px;
+            }
+        }
+    }
+}
