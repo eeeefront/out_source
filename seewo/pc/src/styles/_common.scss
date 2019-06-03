@@ -215,6 +215,9 @@ body{
             transform:scale(1) !important;
         }
     }
+    a:hover{
+        -webkit-tap-highlight-color: transparent;
+    }
 }
 @media (max-width: 1335px ) {
     .header{
