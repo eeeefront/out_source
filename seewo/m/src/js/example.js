@@ -254,7 +254,7 @@ $(function () {
     var $id = $('#leader' + index);
     $("html,body").animate({
       scrollTop: $id.offset().top - $('.header').height()
-    }, 1000);
+    }, 0);
   }
 
   $(window).scroll(function () {
