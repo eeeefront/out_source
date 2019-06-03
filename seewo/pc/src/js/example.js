@@ -29,6 +29,9 @@ $(function(){
         if(cnode ==='1'){
             $("#pre").addClass('ban')
             $("#up").removeClass('ban')
+        }else if(cnode ==='2'){
+            $("#pre").removeClass('ban')
+            $("#up").removeClass('ban')
         }else if(cnode ==='3'){
             $("#pre").removeClass('ban')
             $("#up").addClass('ban')
