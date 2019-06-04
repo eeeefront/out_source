@@ -6,4 +6,11 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" href="./css/@title.css?v=1">
+  <script>
+    if (location.hostname !== 'localhost') {
+      if (!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        window.location.href = location.origin + "/pc/@title.html"
+      }
+    }
+  </script>
 </head>
