@@ -10,8 +10,9 @@ body{
         .header-logo{
             max-width: 1336px;
             margin: 0 auto;
+            padding: 11px 0;
             img{
-                width: 416px;
+                width: 281px;
             }
             .gohome{
                 float: right;
@@ -221,17 +222,12 @@ body{
 }
 @media (max-width: 1335px ) {
     .header{
-        .header-logo{
-            max-width: 960px !important;
-            margin: 0 auto;
-        }
-    }
-    .header{
         height: 60px;
         .header-logo{
             max-width: 960px !important;
+            padding: 13.5px 0 !important;
             img{
-                width: 367px !important;
+                width: 250px !important;
             }
             .gohome{
                 height: 60px !important;
