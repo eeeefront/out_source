@@ -75,7 +75,7 @@ $(function () {
       name: '刘霞',
       id: 11,
       img: './images/example/12.jpg',
-      desc: '校企结合，共同成长',
+      desc: '爱上希沃没商量',
       voteLink: 'http://1139906024.ax.nofollow.51wtp.com/index.php/toupiao/h5/detail?vid=nxedz1pz2n8o640&id=2354162'
     },
     {
@@ -138,7 +138,7 @@ $(function () {
       name: '杨波',
       id: 20,
       img: './images/example/13.jpg',
-      desc: '希沃助我成长',
+      desc: '校企结合，共同成长',
       voteLink: 'http://1139906024.ax.nofollow.51wtp.com/index.php/toupiao/h5/detail?vid=nxedz1pz2n8o640&id=2354163'
     },
     {
