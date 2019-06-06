@@ -30,7 +30,16 @@ $(function () {
     loop: true,
     observer: true
   })
-
+  //故事图文旧
+  // var storybanner = new Swiper('.story-banner', {
+  //   //如果需要分页器
+  //   pagination: {
+  //     el: '.story-swiper-pagination',
+  //     clickable: true,
+  //     type: 'bullets',
+  //   },
+  //   observer: true,
+  // })
   var storybanner = new Swiper('.story-banner', {
     //如果需要分页器
     pagination: {
@@ -38,7 +47,15 @@ $(function () {
       clickable: true,
       type: 'bullets',
     },
-    observer: true,
+    observer: true, 
+    loop : true,
+    loopAdditionalSlides : 3,
+    slidesPerView : 1.4,
+    centeredSlides : true,
+    navigation: {
+      nextEl: '.story-banner .swiper-button-next',
+      prevEl: '.story-banner .swiper-button-prev',
+    },
   })
 
   var celebrationbanner = new Swiper('.celebration-banner', {
@@ -63,6 +80,10 @@ $(function () {
       disableOnInteraction: true,
     }, //自动播放
     observer: true,
+    navigation: {
+      nextEl: '.block-technology .swiper-button-next',
+      prevEl: '.block-technology .swiper-button-prev',
+    },
   })
 
   // 视频播放显示
@@ -132,10 +153,11 @@ $(function () {
       Nodeheight = [
         $('#top').offset().top - 50,
         $('#educate').offset().top - 50,
-        $('#celebration').offset().top - 50,
+        $('.block-media').offset().top - 80,
+        //$('#celebration').offset().top - 50,
         $('#plan').offset().top - 50,
         $('#development').offset().top - 50,
-        $('#partner').offset().top - 50
+        //$('#partner').offset().top - 50
       ],
       length = Nodeheight.length,
       navList = $('.nav .nav-list');
@@ -144,7 +166,13 @@ $(function () {
       navList.eq(0).addClass('active');
     } else {
       for (var i = 1; i < length; i++) {
-        if (winPos < Nodeheight[i + 1] && winPos >= Nodeheight[i]) {
+        if(Nodeheight[i + 1] ){
+          if (winPos < Nodeheight[i + 1] && winPos >= Nodeheight[i]) {
+            navList.removeClass('active');
+            navList.eq(i).addClass('active');
+            break;
+          }
+        }else{
           navList.removeClass('active');
           navList.eq(i).addClass('active');
           break;
