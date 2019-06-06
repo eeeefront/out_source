@@ -22,11 +22,11 @@ $(function () {
     //   clickable: true,
     //   type: 'bullets',
     // },
-    autoplay: {
-      delay: 5000,
-      stopOnLastSlide: false,
-      disableOnInteraction: true,
-    }, //自动播放
+    // autoplay: {
+    //   delay: 5000,
+    //   stopOnLastSlide: false,
+    //   disableOnInteraction: true,
+    // }, //自动播放
     loop: true,
     observer: true
   })
@@ -56,6 +56,11 @@ $(function () {
       nextEl: '.story-banner .swiper-button-next',
       prevEl: '.story-banner .swiper-button-prev',
     },
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
+    }, 
   })
 
   var celebrationbanner = new Swiper('.celebration-banner', {
