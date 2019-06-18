@@ -65,6 +65,14 @@
   appearance: $s;
 }
 
+@mixin filter($s) {
+  -webkit-filter: blur($s);
+  -moz-filter: blur($s);
+  -ms-filter: blur($s);
+  -o-filter: blur($s);
+  filter: blur($s);
+}
+
 // 透明度
 @mixin opacity($opacity) {
   opacity: $opacity / 100;
