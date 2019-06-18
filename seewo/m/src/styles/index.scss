@@ -35,7 +35,7 @@
 }
 
 #first-swiper {
-  height: calc(100vh - 1rem);
+  height: 10.6rem;
 
   .swiper-slide {
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@
   padding: .8rem .6rem;
 
   .dv-title {
-    font-size: .56rem;
+    font-size: .58rem;
     text-align: center;
     line-height: .78rem;
     margin-bottom: .22rem;
@@ -70,10 +70,11 @@
 
   .dv-text {
     padding: 0 .1rem;
-    font-size: .24rem;
+    font-size: .36rem;
     color: #D6D2D2;
     text-align: center;
-    line-height: .4rem;
+    line-height: .5rem;
+
   }
 
   .link-box {
