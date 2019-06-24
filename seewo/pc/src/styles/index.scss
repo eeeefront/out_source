@@ -545,8 +545,8 @@
         padding: 0 5%;
         border: 1px solid #C49B63;
         border-left: none;
+        height: 461.58px;
         .text-title {
-          text-align: center;
           font-size: 28px;
           color: #C49B63;
           margin: 96px 0 60px
@@ -558,6 +558,7 @@
           line-height: 1.5;
           text-align: justify;
           margin-bottom: 132px;
+          
         }
       }
     }
@@ -636,7 +637,7 @@
           background: #C49B63;
 
           .text-title {
-            height: 0;
+
           }
 
           .text-description {
@@ -1085,12 +1086,13 @@
       font-size: 48px;
     }
     .media-top-banner a .banner-text{
+      height: 331.67px;
       .text-title{
-        font-size: 24px;
+        font-size: 22px;
         margin: 42px 0 28px;
       }
       .text-description {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 85px;
       }
     }

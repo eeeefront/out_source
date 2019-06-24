@@ -87,9 +87,10 @@ gulp.task('testImagemin', function () {
       multipass: true //类型：Boolean 默认：false 多次优化svg直到完全优化
     }))
     .pipe(gulp.dest('dev/images'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    // .pipe(browserSync.reload({
+    //   stream: true
+    // }))
+    ;
 });
 
 gulp.task("clean", function () {
