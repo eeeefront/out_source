@@ -122,7 +122,7 @@ $(function () {
     on: {
       slideChangeTransitionStart: function(){
         $(".plan .banner-btn-block .banner-btn").removeClass('active');
-        $('.plan .banner-btn-block .banner-btn:nth-child('+this.activeIndex+')').addClass('active');
+        $('.plan .banner-btn-block .banner-btn:nth-child('+this.activeIndex==4?'1':this.activeIndex+')').addClass('active');
       }
     }
   })
