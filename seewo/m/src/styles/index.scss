@@ -58,8 +58,15 @@
 .black-item,
 .gray-item {
   width: 100%;
-  min-height: 3rem;
   padding: .8rem .18rem .5rem;
+
+  &.no-padding {
+    padding: .2rem .18rem .6rem;
+
+    .dv-title {
+      margin-bottom: 0;
+    }
+  }
 
   .dv-title {
     font-size: .58rem;
@@ -70,7 +77,7 @@
 
   .dv-text {
     padding: 0 .1rem;
-    font-size: .34rem;
+    font-size: .36rem;
     color: #D6D2D2;
     text-align: center;
     line-height: .5rem;
@@ -78,17 +85,18 @@
   }
 
   .link-box {
-    margin: .2rem 0;
+    margin: .4rem 0 .1rem;
     text-align: center;
 
     .watch-btn {
       display: inline-block;
-      width: 2rem;
-      height: .4rem;
-      line-height: .36rem;
+      width: 3.28rem;
+      height: .72rem;
+      line-height: .68rem;
       color: #D69D4E;
       background-color: transparent;
       outline: none;
+      font-size: .42rem;
       border: .02rem solid #D69D4E;
     }
   }
@@ -104,7 +112,7 @@
 
 .second-banner {
   background-color: #181919;
-  padding: 0 .4rem .8rem;
+  padding: .4rem .4rem .8rem;
 
   &.five {
     padding: .4rem 0;
@@ -162,11 +170,8 @@
 
     .txt-btm-box2 {
       width: 100%;
-      height: 3.2rem;
+      height: 4.34rem;
       overflow: hidden;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       line-height: normal;
       background: #191818;
       border: 1px solid #C49B63;
@@ -174,17 +179,16 @@
       padding: .3rem;
 
       .title {
-        font-size: .32rem;
+        font-size: .4rem;
         color: #C49B63;
         margin-bottom: .2rem;
       }
 
       .desc {
-        height: 1.96rem;
         overflow: hidden;
-        font-size: .26rem;
+        font-size: .32rem;
         color: #D6D2D2;
-        line-height: .4rem;
+        line-height: .45rem;
         text-align: justify;
       }
     }
@@ -258,7 +262,7 @@
   background-color: #181919;
 
   &.txt-banner {
-    padding: 0 .44rem .44rem;
+    padding: 0 .44rem .8rem;
     background: #262525;
   }
 }
@@ -368,52 +372,15 @@
     color: #C49B63;
     line-height: 1.12rem;
     text-align: center;
+    font-size: .32rem;
 
     & + .swiper-slide {
-      border-left: 1px solid #333;
+      border-left: 1px solid rgb(121, 63, 63);
     }
   }
   .gallery-thumbs .swiper-slide-thumb-active {
-    color: #fff;
+    color: #191818;
     background-color: #C49B63;
-  }
-
-  .slide-content {
-    width: 100%;
-    position: absolute;
-    bottom: .5rem;
-    left: 0;
-    line-height: normal;
-    @include linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.1));
-
-    .name {
-      font-size: .48rem;
-      color: #fff;
-      padding: .2rem .5rem .3rem .5rem;
-      text-align: right;
-      position: relative;
-
-      &:after {
-        content: '';
-        width: 2rem;
-        height: .06rem;
-        position: absolute;
-        bottom: 0;
-        right: .5rem;
-        @include linear-gradient(to right, #CB9718, #F3D181);
-      }
-    }
-
-    .desc {
-      margin-top: .3rem;
-      padding: 0 .5rem;
-      text-align: right;
-      font-size: .28rem;
-      max-height: 1.76rem;
-      overflow: hidden;
-      line-height: .44rem;
-      color: #D6D2D2;
-    }
   }
 }
 
@@ -439,14 +406,15 @@
 
 .push-tech-wrapper {
   background: #262525;
-  padding: .3rem .44rem;
+  padding: .8rem .44rem .4rem;
 
   .tech-item {
     width: 100%;
     background: #191818;
     border-radius: .06rem;
     padding: .4rem 0;
-    margin-top: .25rem;
+    margin-top: .3rem;
+    border: .02rem solid #C49B63;
     @include clearfix;
 
     .left-box {
@@ -465,7 +433,7 @@
       }
 
       h5 {
-        font-size: .28rem;
+        font-size: .32rem;
         color: #C49B63;
         text-align: center;
         margin-top: .2rem;
@@ -475,10 +443,22 @@
     .right-box {
       width: 65%;
       float: right;
-      font-size: .26rem;
+      font-size: .28rem;
       text-align: justify;
       color: #D6D2D2;
-      padding: 0 .3rem 0 .1rem;
+      padding: 0 .4rem 0 .1rem;
+    }
+
+    &.one {
+      .right-box {
+        font-size: .31rem;
+      }
+    }
+
+    &.four {
+      .left-box {
+        padding-top: .76rem;
+      }
     }
   }
 }
@@ -489,33 +469,24 @@
 }
 
 .media-report-wrapper {
-  background-color: #262525;
-  padding: .5rem .44rem;
-
-  .media-report-txt {
-    padding: .2rem .5rem;
-    font-size: .24rem;
-    line-height: 1.8;
-    color: #d6d2d2;
-    text-align: center;
-  }
+  background-color: #181919;
+  padding: 0 .44rem .8rem;
 }
 
 .six-banner {
   position: relative;
-  height: 11.25rem;
-  margin-top: .6rem;
+  height: 11.65rem;
 
   .swiper-container {
     width: 100%;
-    height: 11.25rem;
+    height: 11.65rem;
     margin-left: auto;
     margin-right: auto;
   }
   .swiper-slide {
     height: 7.45rem;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: top center;
 
     .slide-content {
       width: 100%;
@@ -544,31 +515,37 @@
     width: 100%;
   }
   .gallery-thumbs {
-    height: 3.8rem;
+    height: 4.2rem;
     box-sizing: border-box;
     padding: .2rem 0 0;
   }
   .gallery-thumbs .swiper-slide {
     height: 100%;
-    background: #D8D8D8;
     color: #fff;
     opacity: .6;
 
+    .img-box {
+      height: 2.7rem;
+      line-height: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
     .desc {
       width: 100%;
-      height: .9rem;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      padding: .17rem .3rem;
-      background: #C49B63;
+      height: 1.3rem;
+      border: .02rem solid #c49b63;
+      border-top: 0;
+      padding: .17rem .15rem;
+      background: #191818;
 
       .desc-txt {
-        height: .58rem;
-        line-height: .3rem;
-        overflow: hidden;
-        font-size: .24rem;
-        text-align: justify;
+        line-height: 1.6;
+        font-size: .32rem;
+        // text-align: justify;
+        color: #D6D2D2;
       }
     }
   }
@@ -636,5 +613,24 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+.split-video {
+  width: 100%;
+  line-height: 0;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 }
