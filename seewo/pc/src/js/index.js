@@ -28,7 +28,12 @@ $(function () {
     //   disableOnInteraction: true,
     // }, //自动播放
     loop: true,
-    observer: true
+    observer: true,
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
+    }, //自动播放
   })
   //故事图文旧
   // var storybanner = new Swiper('.story-banner', {
@@ -55,6 +60,19 @@ $(function () {
     navigation: {
       nextEl: '.story-banner .swiper-button-next',
       prevEl: '.story-banner .swiper-button-prev',
+    },
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
+    }, 
+  })
+  var mediabanner = new Swiper('.media-banner', {
+    observer: true, 
+    loop : true,
+    navigation: {
+      nextEl: '.block-media .swiper-button-next',
+      prevEl: '.block-media .swiper-button-prev',
     },
     autoplay: {
       delay: 5000,
@@ -91,6 +109,24 @@ $(function () {
     },
   })
 
+  
+  var planbanner = new Swiper('.plan-banner .banner-img', {
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
+    }, //自动播放
+    loop: true,
+    effect : 'fade',
+    observer: true,
+    on: {
+      slideChangeTransitionStart: function(){
+        $(".plan .banner-btn-block .banner-btn").removeClass('active');
+        $('.plan .banner-btn-block .banner-btn:nth-child('+this.activeIndex+')').addClass('active');
+      }
+    }
+  })
+
   // 视频播放显示
   $(".play").click(function () {
     var src = $(this).attr("data-src");
@@ -122,9 +158,9 @@ $(function () {
     if($(this).hasClass('active')) return;
     $(".plan .banner-btn-block .banner-btn").removeClass('active');
     $(this).addClass('active');
+
     var id = $(this).attr('data-id')
-    $(".plan .banner-img a").hide();
-    $(".plan .banner-img a:nth-child(" + id + ")").show();
+    planbanner.slideTo(id, 1000, false);
   })
   //锚点跳转滑动效果            
   $('a[href*=#],area[href*=#]').click(function () {
@@ -185,7 +221,6 @@ $(function () {
       }
     }
   }
-
 
   // 预约弹窗关闭
   $('.popup .title .close').click(function () {

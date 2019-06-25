@@ -14,12 +14,12 @@
               <img src="./images/Tbanner-1.jpg" alt="">
             </a>
           </div>
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <a href="javascript:void(0)">
               <img class='play'
               data-src="https://store-g1.seewo.com/common-resource/5c79552657234dae9dfc5bea16c132c7" src="./images/Tbanner-2.png" alt="">
             </a>
-          </div>
+          </div> -->
           <div class="swiper-slide">
             <a href="javascript:void(0)">
               <img class='play'
@@ -35,18 +35,20 @@
         <div class="text">
           <div class="text-title">让教育更美好</div>
           <div class="text-description">
-            深耕教育十年，希沃始终用心倾听和满足用户需求、陪伴用户成长，以期让教与学变得更加美好；希沃始终坚持自主创新，积极推动教育装备行业的健康发展，以期让教育行业变得更加美好；同时，希沃始终以社会责任为己任，积极参与公益事业，推动优质教育均衡化，以期让全国教育变得更加美好。
+            深耕教育十年，希沃始终用心倾听和满足用户需求、陪伴用户成长，以期让教与学变得更加美好。<br>
+            希沃始终坚持自主创新，积极推动教育装备行业的健康发展，以期让教育行业变得更加美好。<br>
+            同时，希沃始终以社会责任为己任，积极参与公益事业，推动优质教育均衡化，以期让全国教育变得更加美好。
           </div>
         </div>
         <div class="educate-banner swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" >
               <!-- <img src="./images/banner.gif" alt=""> -->
-              <video autoplay muted loop>
+              <video autoplay muted loop class='play'
+              data-src="https://store-g1.seewo.com/common-resource/5c79552657234dae9dfc5bea16c132c7">
                 <source src="https://store-g1.seewo.com/common-resource/5b2adc5bc50a446f9c08f73602bf58a0" type="video/mp4">
               </video>
-              <div><img class='play'
-                  data-src="https://store-g1.seewo.com/common-resource/5c79552657234dae9dfc5bea16c132c7" src="./images/play.png" alt=""></div>
+              <!-- <div><img src="./images/play.png" alt=""></div> -->
             </div>
           </div>
         </div>
@@ -106,9 +108,13 @@
             </div>
           </div>
           <div class="story-swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-prev">
+              <img src="./images/arrow-left.png" alt="">
+          </div>
           <!--左箭头-->
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-next">
+              <img src="./images/arrow-right.png" alt="">
+            </div>
           <!--右箭头-->
         </div>
         <!-- 故事图文 旧-->
@@ -428,7 +434,7 @@
       <div class="block-media" id='report'>
         <div class="block-title">媒体报道</div>
         <div class="media-top-banner">
-          <a href="https://mp.weixin.qq.com/s/ELHuOWJmXrzyX2M2dzcfjA">
+          <a href="https://mp.weixin.qq.com/s/ELHuOWJmXrzyX2M2dzcfjA" target="_blank">
             <div class="banner-img">
               <img src="./images/media-big.png" alt="" srcset="">
             </div>
@@ -446,7 +452,7 @@
         <div class="media-banner swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="https://mp.weixin.qq.com/s/Ad6UGw5msFRMymViM7S6pA">
+              <a href="https://mp.weixin.qq.com/s/Ad6UGw5msFRMymViM7S6pA" target="_blank">
                 <div class="banner-img">
                   <img src="./images/media-1.png" alt="" srcset="">
                 </div>
@@ -455,7 +461,7 @@
                   <!-- <div class="text-description">（15字x2行）希沃全新学生笔记本seewoBook，焕然一新，为学而生</div> -->
                 </div>
               </a>
-              <a href="https://mp.weixin.qq.com/s/CyIZlT1BFgr8wx0HKVg0Wg">
+              <a href="https://mp.weixin.qq.com/s/CyIZlT1BFgr8wx0HKVg0Wg" target="_blank">
                 <div class="banner-img">
                   <img src="./images/media-2.png" alt="" srcset="">
                 </div>
@@ -464,7 +470,7 @@
                   <!-- <div class="text-description">（15字x2行）希沃全新学生笔记本seewoBook，焕然一新，为学而生</div> -->
                 </div>
               </a>
-              <a href="https://mp.weixin.qq.com/s/LXHv8OzqgLm75N9uu_xBEg">
+              <a href="https://mp.weixin.qq.com/s/LXHv8OzqgLm75N9uu_xBEg" target="_blank">
                 <div class="banner-img">
                   <img src="./images/media-3.png" alt="" srcset="">
                 </div>
@@ -492,10 +498,12 @@
           </div>
         </div>
         <div class="plan-banner">
-          <div class="banner-img">
-            <a href="https://study.seewoedu.cn/zone/c536ce9759a345e3aba4f41180ba13da"><img src="./images/plan-banner-1.png" alt=""></a>
-            <a href="./example.html" class="hide" ><img src="./images/plan-banner-2.png" alt=""></a>
-            <a href="https://www.wjx.top/jq/41875391.aspx" class="hide" ><img src="./images/plan-banner-3.png" alt=""></a>
+          <div class="banner-img  swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="https://study.seewoedu.cn/zone/c536ce9759a345e3aba4f41180ba13da" target="_blank"><img src="./images/plan-banner-1.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="./example.html" ><img src="./images/plan-banner-2.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.wjx.top/jq/41875391.aspx" target="_blank"><img src="./images/plan-banner-3.png" alt=""></a></div>
+            </div>
           </div>
           <div class="banner-btn-block">
             <div class="banner-btn active" data-id='1'>信息化线上课程</div>
