@@ -198,27 +198,19 @@
       position: relative;
       padding-bottom:60px;
       .swiper-slide {
-        background: url('../images/banner-1.png') no-repeat center;
+        background: url('../images/banner-tec-1.png') no-repeat center;
         background-size:100% 100%; 
         @include filter(5px);
         a{
           overflow: hidden;
           display: block;
+          cursor: default;
           img{
             opacity: 0;
             width: 100%;
             display: block;
           }
         }
-      }
-      .swiper-slide:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10;
       }
       .swiper-slide-active{
         @include filter(0);
