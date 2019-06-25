@@ -75,6 +75,10 @@ $(function () {
     slidesPerView: 2,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    }
   });
 
   var galleryTop3 = new Swiper('#deficul-gallery-top', {
@@ -82,10 +86,7 @@ $(function () {
     thumbs: {
       swiper: galleryThumbs3,
     },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    }
+    autoplay: false
   });
 
   var scroll = function(index) {
