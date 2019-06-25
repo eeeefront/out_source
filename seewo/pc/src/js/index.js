@@ -121,8 +121,9 @@ $(function () {
     observer: true,
     on: {
       slideChangeTransitionStart: function(){
+        var num = this.activeIndex==4?'1':this.activeIndex
         $(".plan .banner-btn-block .banner-btn").removeClass('active');
-        $('.plan .banner-btn-block .banner-btn:nth-child('+this.activeIndex==4?'1':this.activeIndex+')').addClass('active');
+        $('.plan .banner-btn-block .banner-btn:nth-child('+num+')').addClass('active');
       }
     }
   })
