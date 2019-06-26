@@ -475,18 +475,18 @@
 
 .six-banner {
   position: relative;
-  height: 11.65rem;
 
   .swiper-container {
     width: 100%;
-    height: 11.65rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: .6rem;
   }
-  .swiper-slide {
+  .big-wrapper {
     height: 7.45rem;
     background-size: 100% auto;
     background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: .2rem;
 
     .slide-content {
       width: 100%;
@@ -510,16 +510,8 @@
       }
     }
   }
-  .gallery-top {
-    height: 7.45rem;
-    width: 100%;
-  }
-  .gallery-thumbs {
-    height: 4.2rem;
-    box-sizing: border-box;
-    padding: .2rem 0 0;
-  }
-  .gallery-thumbs .swiper-slide {
+
+  .swiper-container .swiper-slide {
     height: 100%;
     color: #fff;
 
@@ -547,10 +539,6 @@
         color: #D6D2D2;
       }
     }
-  }
-  .gallery-thumbs .swiper-slide-thumb-active {
-    opacity: 1;
-    line-height: normal;
   }
 
   .dot-pagination {
