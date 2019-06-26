@@ -73,20 +73,13 @@ $(function () {
   var galleryThumbs3 = new Swiper('#deficul-gallery-thumbs', {
     spaceBetween: 10,
     slidesPerView: 2,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false,
-    }
-  });
-
-  var galleryTop3 = new Swiper('#deficul-gallery-top', {
-    spaceBetween: 10,
-    thumbs: {
-      swiper: galleryThumbs3,
     },
-    autoplay: false
+    pagination: {
+      el: '.dot-pagination',
+    }
   });
 
   var scroll = function(index) {
