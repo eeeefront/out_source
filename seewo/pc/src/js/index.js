@@ -13,28 +13,7 @@ $(function () {
     }, //自动播放
     loop: true,
     observer: true
-  })
-
-  var educatebanner = new Swiper('.educate-banner', {
-    //如果需要分页器
-    // pagination: {
-    //   el: '.educate-swiper-pagination',
-    //   clickable: true,
-    //   type: 'bullets',
-    // },
-    // autoplay: {
-    //   delay: 5000,
-    //   stopOnLastSlide: false,
-    //   disableOnInteraction: true,
-    // }, //自动播放
-    loop: true,
-    observer: true,
-    autoplay: {
-      delay: 5000,
-      stopOnLastSlide: false,
-      disableOnInteraction: true,
-    }, //自动播放
-  })
+  });
   //故事图文旧
   // var storybanner = new Swiper('.story-banner', {
   //   //如果需要分页器
@@ -52,7 +31,7 @@ $(function () {
       clickable: true,
       type: 'bullets',
     },
-    observer: true, 
+    observer: true,
     loop : true,
     loopAdditionalSlides : 3,
     slidesPerView : 1.4,
@@ -65,10 +44,10 @@ $(function () {
       delay: 5000,
       stopOnLastSlide: false,
       disableOnInteraction: true,
-    }, 
+    },
   })
   var mediabanner = new Swiper('.media-banner', {
-    observer: true, 
+    observer: true,
     loop : true,
     navigation: {
       nextEl: '.block-media .swiper-button-next',
@@ -78,7 +57,7 @@ $(function () {
       delay: 5000,
       stopOnLastSlide: false,
       disableOnInteraction: true,
-    }, 
+    },
   })
 
   var celebrationbanner = new Swiper('.celebration-banner', {
@@ -109,7 +88,7 @@ $(function () {
     },
   })
 
-  
+
   var planbanner = new Swiper('.plan-banner .banner-img', {
     autoplay: {
       delay: 5000,
@@ -163,7 +142,7 @@ $(function () {
     var id = $(this).attr('data-id')
     planbanner.slideTo(id, 1000, false);
   })
-  //锚点跳转滑动效果            
+  //锚点跳转滑动效果
   $('a[href*=#],area[href*=#]').click(function () {
     if ($(this).parent().hasClass('active')) return
     //解除绑定滚动事件

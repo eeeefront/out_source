@@ -79,6 +79,10 @@
       img {
         width: 100%;
       }
+
+      video {
+        width: 100%;
+      }
     }
   }
 
@@ -213,7 +217,7 @@
       @for $i from 1 through 10{
         .swiper-slide+.sipwe-#{$i}{
           background: url('../images/banner-tec-'+$i+'.png') no-repeat center;
-          background-size:100% 100%; 
+          background-size:100% 100%;
         }
       }
       .swiper-slide::after {
@@ -249,7 +253,7 @@
           border: 1px solid #C49B63;
           margin: 0 1%;
         }
-  
+
         .swiper-pagination-bullet-active {
           opacity: 1;
           width: 7.4px;
@@ -257,7 +261,7 @@
           background: #C49B63;
           position: relative;
         }
-  
+
         .swiper-pagination-bullet-active::after {
           content: '';
           width: 13.7px;
@@ -268,7 +272,7 @@
           top: -5px;
           left: -5px;
         }
-  
+
         .swiper-pagination-bullet-active::before {
           content: '';
           width: 21px;
@@ -283,11 +287,11 @@
       .swiper-button-prev {
         left: 5%;
       }
-    
+
       .swiper-button-next {
         right: 5%;
       }
-    
+
       .swiper-button-prev,
       .swiper-button-next {
         width: 55px;
@@ -562,7 +566,7 @@
           line-height: 1.5;
           text-align: justify;
           margin-bottom: 132px;
-          
+
         }
       }
     }
@@ -704,7 +708,7 @@
       }
     }
 
-    .banner-btn-block {    
+    .banner-btn-block {
       width: 35.9%;
       text-align: center;
       float: right;
@@ -722,7 +726,7 @@
       }
 
       .banner-btn:nth-of-type(2) {
-        margin: 1.2% 0;    
+        margin: 1.2% 0;
       }
 
       .banner-btn.active {
@@ -793,7 +797,7 @@
           margin-right: 2%;
           text-align: center;
           padding:4% 0;
-          border: 1px solid #C39A61; 
+          border: 1px solid #C39A61;
           height: 400px;
           border-radius: 4px;
           .box-img {
@@ -894,7 +898,7 @@
             border: 1px solid #C49B63;
             margin: 0 1%;
           }
-    
+
           .swiper-pagination-bullet-active {
             opacity: 1;
             width: 7px;
@@ -902,7 +906,7 @@
             background: #C49B63;
             position: relative;
           }
-    
+
           .swiper-pagination-bullet-active::after {
             content: '';
             width: 13px;
@@ -913,7 +917,7 @@
             top: -5px;
             left: -5px;
           }
-    
+
           .swiper-pagination-bullet-active::before {
             content: '';
             width: 19px;
@@ -930,12 +934,12 @@
         left: 12px;
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23C49B63'%2F%3E%3C%2Fsvg%3E")
       }
-    
+
       .swiper-button-next {
         right:12px;
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23C49B63'%2F%3E%3C%2Fsvg%3E")
       }
-    
+
       .swiper-button-prev,
       .swiper-button-next {
         outline: none;
@@ -1145,7 +1149,7 @@
         width:110px !important;
       }
     }
-    .block-education .block-education-content .content-box{    
+    .block-education .block-education-content .content-box{
       height: 300px !important;
       .box-title{
         font-size: 22px!important;
@@ -1159,32 +1163,32 @@
     .block-technology .technology-banner .banner-text{
       .text-title{
         font-size: 18px !important;
-      } 
+      }
       .text-description {
         font-size: 12px !important;
         line-height: 24px !important;
       }
-    } 
+    }
     .block-media {
       .media-top-banner a .banner-text{
         .text-title{
           font-size: 22px !important;
         }
-        
+
         .text-description {
           font-size: 12px !important;
           line-height: 24px !important;
         }
-      } 
+      }
       .media-banner .swiper-slide a .banner-text{
         .text-title{
           font-size: 14px !important;
         }
-        
+
         .text-description {
           font-size: 14px !important;
         }
-      } 
+      }
     }
   }
   .partner {
@@ -1199,7 +1203,7 @@
     .text-title {
       font-size: 48px;
     }
-  
+
     .text-description {
       font-size: 14px;
     }

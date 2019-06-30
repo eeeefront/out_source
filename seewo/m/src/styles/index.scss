@@ -124,6 +124,7 @@
 
   .swiper-slide {
     line-height: 0;
+    background-color: #181919;
 
     .txt-btm-box {
       width: 100%;
@@ -447,12 +448,6 @@
       text-align: justify;
       color: #D6D2D2;
       padding: 0 .4rem 0 .1rem;
-    }
-
-    &.one {
-      .right-box {
-        font-size: .31rem;
-      }
     }
 
     &.four {
