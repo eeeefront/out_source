@@ -177,47 +177,53 @@ body{
         position: fixed;
         top: 0;
         left: 0;
-        height: 100vh;
-        width: 100vw;
-        background: rgba(0,0,0,0.6);
-        z-index:-1;
-        opacity: 0;
-        visibility: hidden;
-        transition:opacity 0.6s;
-        video{
-            width: 60%;
-            position: absolute;
-            top: 50vh;
-            transform: translateY(-50%) scale(0.2);
-            left: 20%;
-            display: block;
-            transition: 0.6s;
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+        display: none;
+
+        .cover {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 998;
+          background: rgba(0,0,0,0.6);
+          transition: opacity 0.6s;
         }
-        span{
-            font-size: 18px;    
+
+        .video-box {
+          width: 60%;
+          @include abs-center;
+          display: block;
+          z-index: 999;
+          position: relative;
+
+          video {
+            width: 100%;
+          }
+
+          .close {
+            font-size: 18px;
             position: absolute;
-            right: 18%;
+            right: -40px;
+            z-index: 999;
             width: 23px;
             height: 22px;
-            top: 12%;
+            top: -30px;
             @include radius(100%);
             color: #C49B63;
             border:1px solid #C49B63;
             line-height: 1;
-            text-align: center
-        }
-        span:hover{
-            color:#fff;
-            background: #C49B63;
-            cursor: pointer;
-        }
-    }
-    .playVideo-show{
-        opacity: 1;
-        visibility: visible;
-        z-index: 100;
-        video{
-            transform:translateY(-50%) scale(1) !important;
+            text-align: center;
+
+            &:hover{
+              color:#fff;
+              background: #C49B63;
+              cursor: pointer;
+            }
+          }
         }
     }
     a:hover{

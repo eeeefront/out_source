@@ -1,7 +1,32 @@
 <!-- 视频弹窗 -->
-<div class="playVideo" id="">
-    <video controls autoplay width="500px" >
-        <source src="#" type="video/mp4">
-    </video>
-    <span class="close">×</span>
+<div class="playVideo" id="playVideo">
+    <div class="cover" id="cover"></div>
+    <div class="video-box">
+      <video controls autoplay width="500px" >
+          <source src="#" type="video/mp4">
+      </video>
+      <span class="close" id="close">×</span>
+    </div>
 </div>
+
+<script>
+  $(function(){
+     // 视频播放显示
+    $(".play").click(function (e) {
+      e.stopPropagation();
+      var src = $(this).attr("data-src");
+      if ($(this).attr("data-id")) {
+        $("#playVideo video").attr("poster", "")//未播放前的图片
+      }
+      $("#playVideo video").attr("src", src);
+      $("#playVideo").fadeIn();
+    });
+
+    $("#cover, #close").click(function (e) {
+      e.stopPropagation();
+      $("#playVideo").fadeOut();
+      $("#playVideo video").attr({"src":"#","poster": ""});
+    })
+
+  });
+</script>

@@ -108,20 +108,6 @@ $(function () {
     }
   })
 
-  // 视频播放显示
-  $(".play").click(function () {
-    var src = $(this).attr("data-src");
-    if ($(this).attr("data-id")) {
-      $(".playVideo video").attr("poster", "")//未播放前的图片
-    }
-    $(".playVideo").addClass("playVideo-show")
-    $(".playVideo video").attr("src", src)
-  })
-  $(".playVideo").click(function () {
-    $(".playVideo").removeClass("playVideo-show")
-    $(".playVideo video").attr({"src":"#","poster": ""})
-  })
-
   // 教育更美好轮播图放大
   $('.story-banner .swiper-wrapper .swiper-slide-box').hover(function (){
     if($(this).hasClass('active')) return;
