@@ -583,19 +583,22 @@
   .media-banner {
     margin: 20px auto 40px;
     width: 86.92%;
+
     .swiper-slide {
       padding-bottom: 4%;
       height: auto;
+      white-space: nowrap;
 
       a:nth-child(2) {
         margin: 0 3%;
       }
 
       a {
-        width: 31.30%;
+        width: 31.31%;
         height: 100%;
         display: inline-block;
-        overflow: hidden;
+        // overflow: hidden;
+        vertical-align: top;
 
         .banner-img {
           width: 100%;
@@ -995,7 +998,7 @@
 .shading {
   background: url('../images/shading.png') no-repeat center;
   height: 30vh;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: left bottom;
 }
 
@@ -1024,7 +1027,7 @@
     }
   }
 }
-@media (min-width: 1336px) {
+@media (min-width: 1280px) {
   .shading {
     margin-top:96px;
   }

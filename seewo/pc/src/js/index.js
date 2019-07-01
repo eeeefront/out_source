@@ -9,7 +9,7 @@ $(function () {
     autoplay: {
       delay: 5000,
       stopOnLastSlide: false,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     }, //自动播放
     loop: true,
     observer: true
@@ -43,12 +43,13 @@ $(function () {
     autoplay: {
       delay: 5000,
       stopOnLastSlide: false,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
   })
   var mediabanner = new Swiper('.media-banner', {
     observer: true,
     loop : true,
+    spaceBetween: 20,
     navigation: {
       nextEl: '.block-media .swiper-button-next',
       prevEl: '.block-media .swiper-button-prev',
@@ -56,7 +57,7 @@ $(function () {
     autoplay: {
       delay: 5000,
       stopOnLastSlide: false,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
   })
 
@@ -79,7 +80,7 @@ $(function () {
     autoplay: {
       delay: 5000,
       stopOnLastSlide: false,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     }, //自动播放
     observer: true,
     navigation: {
@@ -91,9 +92,9 @@ $(function () {
 
   var planbanner = new Swiper('.plan-banner .banner-img', {
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       stopOnLastSlide: false,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     }, //自动播放
     loop: true,
     effect : 'fade',
